@@ -1,0 +1,2645 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildIQ Projects — Project Management Consultancy (PMC) | Mumbai, India</title>
+  <meta name="description" content="BuildIQ Projects is a professional Project Management Consultancy (PMC) in Mumbai. We coordinate, monitor, and manage construction, interior, and renovation projects on behalf of clients.">
+  <meta name="keywords" content="PMC company Mumbai, Project Management Consultancy Mumbai, PMC services Mumbai, Construction PMC Mumbai, Project management consultant Mumbai, Interior project management Mumbai, Construction project management Mumbai, PMC consultant Mumbai, Project management consultancy India">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BuildIQ Projects — Project Management Consultancy (PMC)">
+  <meta property="og:description" content="Intelligent Project Management. Seamless Execution. Your Project, Under Control.">
+  <meta property="og:site_name" content="BuildIQ Projects">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#090D16',
+              surface: '#0F172A',
+              card: '#131D31',
+              cardHover: '#1E293B',
+              blue: '#2563EB',
+              blueLight: '#3B82F6',
+              cyan: '#0EA5E9',
+              amber: '#F59E0B',
+              muted: '#94A3B8'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            body: ['"Inter"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org JSON-LD structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "BuildIQ Projects",
+    "image": "https://images.unsplash.com/photo-1541888946425-d0fbb180c5f5?q=80&w=1200&auto=format&fit=crop",
+    "description": "Professional Project Management Consultancy (PMC) for construction, interior, and renovation projects.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "19.0760",
+      "longitude": "72.8777"
+    },
+    "priceRange": "$$$",
+    "serviceType": [
+      "Project Management Consultancy",
+      "Construction PMC",
+      "Interior Project Management",
+      "Contractor Coordination",
+      "Quality Monitoring & Snagging",
+      "Site Execution Oversight"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 antialiased selection:bg-blue-600 selection:text-white pb-16 lg:pb-0">
+
+  <!-- =========================================================================
+       1. STICKY NAVIGATION
+       ========================================================================= -->
+  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-brand-dark/80 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center text-white font-bold shadow-lg shadow-blue-900/40 border border-blue-400/30 group-hover:scale-105 transition-transform">
+          <i data-lucide="layers" class="w-5 h-5"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-extrabold tracking-tight text-white flex items-center gap-1.5">
+            BUILDIQ <span class="text-blue-500 font-semibold text-sm tracking-wider uppercase bg-blue-950/60 px-1.5 py-0.5 rounded border border-blue-800/50">PROJECTS</span>
+          </span>
+          <span class="text-[10px] uppercase tracking-widest text-slate-400 font-mono">PROJECT MANAGEMENT CONSULTANCY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#services" class="nav-link hover:text-white transition-colors">PMC Services</a>
+        <a href="#method" class="nav-link hover:text-white transition-colors">The Method</a>
+        <a href="#pillars" class="nav-link hover:text-white transition-colors">Four Pillars</a>
+        <a href="#control-dashboard" class="nav-link hover:text-white transition-colors">Project Control</a>
+        <a href="#reporting" class="nav-link hover:text-white transition-colors">Reporting</a>
+        <a href="#experience" class="nav-link hover:text-white transition-colors">Experience</a>
+        <a href="#why-buildiq" class="nav-link hover:text-white transition-colors">Why BuildIQ</a>
+      </nav>
+
+      <!-- Desktop CTAs -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="tel:+919820000000" class="text-xs font-mono text-slate-400 hover:text-white flex items-center gap-1.5 transition-colors">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-blue-400"></i> Mumbai • India
+        </a>
+        <a href="#consultation" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold shadow-lg shadow-blue-600/30 transition-all hover:shadow-blue-600/50 flex items-center gap-2 border border-blue-400/30">
+          <span>Discuss Your Project</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="Toggle navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu-drawer" class="fixed inset-0 z-50 bg-brand-dark/95 backdrop-blur-xl hidden flex flex-col p-6 overflow-y-auto">
+    <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded bg-blue-600 flex items-center justify-center text-white">
+          <i data-lucide="layers" class="w-4 h-4"></i>
+        </div>
+        <span class="font-bold text-white tracking-tight">BUILDIQ PROJECTS</span>
+      </div>
+      <button id="close-mobile-menu" class="p-2 text-slate-400 hover:text-white">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    
+    <div class="py-2 text-xs font-mono text-blue-400 tracking-wider uppercase border-b border-slate-800/60 my-3">
+      PROJECT MANAGEMENT CONSULTANCY
+    </div>
+
+    <nav class="flex flex-col gap-4 text-base font-medium py-4">
+      <a href="#services" class="text-slate-200 hover:text-blue-400 py-1 flex items-center justify-between">PMC Services <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+      <a href="#what-is-pmc" class="text-slate-200 hover:text-blue-400 py-1 flex items-center justify-between">What is PMC? <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+      <a href="#method" class="text-slate-200 hover:text-blue-400 py-1 flex items-center justify-between">The BuildIQ Method <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+      <a href="#control-dashboard" class="text-slate-200 hover:text-blue-400 py-1 flex items-center justify-between">Project Control <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+      <a href="#reporting" class="text-slate-200 hover:text-blue-400 py-1 flex items-center justify-between">Reporting <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+      <a href="#experience" class="text-slate-200 hover:text-blue-400 py-1 flex items-center justify-between">Project Experience <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+      <a href="#why-buildiq" class="text-slate-200 hover:text-blue-400 py-1 flex items-center justify-between">Why BuildIQ <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+      <a href="#consultation" class="text-slate-200 hover:text-blue-400 py-1 flex items-center justify-between">Request Consultation <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i></a>
+    </nav>
+
+    <div class="mt-auto pt-6 border-t border-slate-800 space-y-3">
+      <a href="#consultation" class="w-full py-3.5 rounded-lg bg-blue-600 text-white font-semibold text-center block shadow-lg shadow-blue-600/30">
+        Discuss Your Project
+      </a>
+      <a href="#" class="whatsapp-trigger-btn w-full py-3.5 rounded-lg bg-emerald-600 text-white font-semibold text-center flex items-center justify-center gap-2">
+        <i data-lucide="message-circle" class="w-5 h-5"></i>
+        <span>Chat on WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       01. HERO SECTION
+       ========================================================================= -->
+  <section class="relative min-h-[92vh] flex items-center pt-28 pb-16 overflow-hidden bg-grid-pattern">
+    <!-- Ambient Light Effects -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-blue-600/15 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-cyan-600/10 blur-[100px] rounded-full pointer-events-none -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Copy (Col 1-7) -->
+        <div class="lg:col-span-7 space-y-7 reveal-on-scroll">
+          
+          <!-- Eyebrow Tag -->
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-800/60 text-blue-400 text-xs font-mono tracking-wider uppercase shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+            <span>PROJECT MANAGEMENT CONSULTANCY</span>
+            <span class="text-slate-600">|</span>
+            <span class="text-slate-300 font-normal">MUMBAI • INDIA</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.08]">
+            Your Project.<br>
+            <span class="bg-gradient-to-r from-blue-400 via-cyan-300 to-white bg-clip-text text-transparent">
+              Under Control.
+            </span>
+          </h1>
+
+          <!-- Supporting Text -->
+          <p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-normal leading-relaxed">
+            <strong class="text-white font-medium">BuildIQ Projects</strong> provides professional project management, multi-stakeholder coordination, and execution oversight for <span class="text-white underline decoration-blue-500/50 underline-offset-4">construction</span>, <span class="text-white underline decoration-blue-500/50 underline-offset-4">interior</span>, and <span class="text-white underline decoration-blue-500/50 underline-offset-4">renovation</span> projects.
+          </p>
+
+          <!-- Core Proposition Highlight Box -->
+          <div class="p-4 rounded-xl glass-panel technical-border bg-slate-900/60 max-w-2xl border-l-4 border-l-blue-500">
+            <div class="flex items-start gap-3">
+              <div class="p-1.5 rounded-md bg-blue-950 text-blue-400 mt-0.5">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300">
+                <span class="text-white font-semibold">Client-Side Management Layer:</span> We act as your dedicated management partner on site — coordinating contractors, vendors, and consultants so you don't have to chase every moving part.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a href="#consultation" class="px-7 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-center text-base shadow-xl shadow-blue-600/30 transition-all hover:shadow-blue-600/50 flex items-center justify-center gap-3 group border border-blue-400/40">
+              <span>Discuss Your Project</span>
+              <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            
+            <a href="#services" class="px-6 py-4 rounded-xl glass-panel hover:bg-slate-800/80 text-slate-200 font-medium text-center text-base border border-slate-700 transition-all flex items-center justify-center gap-2">
+              <i data-lucide="compass" class="w-5 h-5 text-blue-400"></i>
+              <span>Explore Our Services</span>
+            </a>
+          </div>
+
+          <!-- Hero Visual Workflow Flow -->
+          <div class="pt-4 border-t border-slate-800/80">
+            <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400 mb-2.5 flex items-center gap-1.5">
+              <i data-lucide="git-commit" class="w-3.5 h-3.5 text-blue-400"></i>
+              <span>End-to-End PMC Execution Flow</span>
+            </div>
+            <div class="grid grid-cols-4 gap-2 text-center text-xs font-mono">
+              <div class="px-2.5 py-1.5 rounded-md bg-slate-900/80 border border-slate-800 text-slate-300 flex items-center justify-center gap-1">
+                <span class="text-blue-400 font-bold">01</span> Planning
+              </div>
+              <div class="px-2.5 py-1.5 rounded-md bg-slate-900/80 border border-slate-800 text-slate-300 flex items-center justify-center gap-1">
+                <span class="text-blue-400 font-bold">02</span> Coordination
+              </div>
+              <div class="px-2.5 py-1.5 rounded-md bg-slate-900/80 border border-slate-800 text-slate-300 flex items-center justify-center gap-1">
+                <span class="text-blue-400 font-bold">03</span> Site Oversight
+              </div>
+              <div class="px-2.5 py-1.5 rounded-md bg-blue-950/60 border border-blue-800/60 text-blue-300 font-semibold flex items-center justify-center gap-1">
+                <span class="text-cyan-400 font-bold">04</span> Handover
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Visual / Live PMC HUD Card (Col 8-12) -->
+        <div class="lg:col-span-5 reveal-on-scroll">
+          <div class="relative">
+            <!-- Background Backdrop Glow -->
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl blur-md opacity-30"></div>
+
+            <div class="relative rounded-2xl glass-panel border border-slate-700/80 overflow-hidden shadow-2xl bg-brand-surface/90">
+              
+              <!-- Card Header -->
+              <div class="px-5 py-4 border-b border-slate-800 bg-slate-900/80 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                  <span class="text-xs font-mono uppercase tracking-wider text-slate-300 font-semibold">PMC PROJECT CONTROL HUB</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-[11px] font-mono bg-blue-950 text-blue-400 px-2 py-0.5 rounded border border-blue-800/50">LIVE OVERSIGHT</span>
+                </div>
+              </div>
+
+              <!-- Main Hero Image with PMC Data Overlay -->
+              <div class="relative h-60 w-full overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1541888946425-d0fbb180c5f5?q=80&w=1000&auto=format&fit=crop" 
+                  alt="BuildIQ Projects Project Management Site Coordination and Inspection" 
+                  class="w-full h-full object-cover object-center filter brightness-90 contrast-105"
+                  loading="eager"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-surface via-transparent to-transparent"></div>
+                
+                <!-- Floating Site Tag -->
+                <div class="absolute bottom-3 left-3 bg-slate-900/90 backdrop-blur-md px-3 py-1.5 rounded-lg border border-slate-700 text-xs font-mono flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                  <span class="text-slate-200">Site Inspection & Tolerance Audit</span>
+                </div>
+              </div>
+
+              <!-- HUD Metric Tiles -->
+              <div class="p-5 space-y-4">
+                <div class="grid grid-cols-2 gap-3 text-xs">
+                  <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
+                    <div class="text-slate-400 text-[10px] font-mono uppercase">Coordination Status</div>
+                    <div class="text-white font-semibold text-sm mt-0.5 flex items-center gap-1.5">
+                      <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+                      <span>Stakeholders Aligned</span>
+                    </div>
+                  </div>
+                  <div class="p-3 rounded-lg bg-slate-900/90 border border-slate-800">
+                    <div class="text-slate-400 text-[10px] font-mono uppercase">Quality Checkpoints</div>
+                    <div class="text-white font-semibold text-sm mt-0.5 flex items-center gap-1.5">
+                      <i data-lucide="clipboard-check" class="w-4 h-4 text-blue-400"></i>
+                      <span>18 / 20 Verified</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Milestone Progress Bar -->
+                <div class="p-3.5 rounded-lg bg-slate-900/90 border border-slate-800">
+                  <div class="flex items-center justify-between text-xs mb-1.5">
+                    <span class="text-slate-300 font-medium flex items-center gap-1.5">
+                      <i data-lucide="calendar" class="w-3.5 h-3.5 text-blue-400"></i> Master Milestone Schedule
+                    </span>
+                    <span class="font-mono text-blue-400 font-semibold">On Track</span>
+                  </div>
+                  <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                    <div class="bg-gradient-to-r from-blue-500 to-cyan-400 h-full rounded-full w-[76%]"></div>
+                  </div>
+                  <div class="flex justify-between text-[10px] font-mono text-slate-400 mt-1.5">
+                    <span>Phase: Fit-Out & MEP Sync</span>
+                    <span>76% Target Achieved</span>
+                  </div>
+                </div>
+
+                <!-- Quick Consultation Mini-Banner inside Card -->
+                <div class="pt-1 flex items-center justify-between text-xs text-slate-300">
+                  <span class="flex items-center gap-1 text-slate-400">
+                    <i data-lucide="users" class="w-3.5 h-3.5 text-blue-400"></i>
+                    Need independent site oversight?
+                  </span>
+                  <a href="#consultation" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1">
+                    Book Call <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       02. TRUST & VALUE STRIP
+       ========================================================================= -->
+  <section class="py-8 bg-slate-950 border-y border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
+        
+        <!-- Pillar 1 -->
+        <div class="flex items-center gap-3.5 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-lg bg-blue-950/80 border border-blue-800/60 flex items-center justify-center text-blue-400 flex-shrink-0">
+            <i data-lucide="layout-grid" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider font-mono">PROJECT PLANNING</h4>
+            <p class="text-xs text-slate-400">Structured project setup & milestones.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="flex items-center gap-3.5 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-lg bg-blue-950/80 border border-blue-800/60 flex items-center justify-center text-blue-400 flex-shrink-0">
+            <i data-lucide="git-merge" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider font-mono">SITE COORDINATION</h4>
+            <p class="text-xs text-slate-400">Multiple teams working in sync.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="flex items-center gap-3.5 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-lg bg-blue-950/80 border border-blue-800/60 flex items-center justify-center text-blue-400 flex-shrink-0">
+            <i data-lucide="check-square" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider font-mono">QUALITY MONITORING</h4>
+            <p class="text-xs text-slate-400">Execution reviewed against specs.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="flex items-center gap-3.5 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-lg bg-blue-950/80 border border-blue-800/60 flex items-center justify-center text-blue-400 flex-shrink-0">
+            <i data-lucide="trending-up" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider font-mono">PROGRESS CONTROL</h4>
+            <p class="text-xs text-slate-400">Milestones & delays tracked early.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       03. THE PROBLEM SECTION
+       ========================================================================= -->
+  <section class="py-20 lg:py-28 relative overflow-hidden bg-brand-surface/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Statement (Col 1-6) -->
+        <div class="lg:col-span-6 space-y-6 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-rose-400 bg-rose-950/40 px-3 py-1 rounded border border-rose-900/50">
+            <i data-lucide="alert-triangle" class="w-3.5 h-3.5"></i>
+            <span>The Reality of Project Execution</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            Construction Projects Get Complicated Fast.
+          </h2>
+
+          <div class="text-base sm:text-lg text-slate-300 space-y-4">
+            <p class="font-medium text-slate-200 border-l-2 border-rose-500/80 pl-4 py-1">
+              Multiple contractors. Different vendors. Design changes. Site decisions. Material coordination. Delays. Quality issues.
+            </p>
+            
+            <p class="text-slate-400">
+              Without a dedicated project-management layer, the client often becomes the default person coordinating everything — spending valuable hours troubleshooting contractor disputes, deciphering technical site excuses, and absorbing avoidable delays.
+            </p>
+          </div>
+
+          <!-- Highlight Resolution -->
+          <div class="pt-4">
+            <div class="text-xl sm:text-2xl font-bold text-white mb-4">
+              That is where <span class="text-blue-400 font-extrabold">BuildIQ Projects</span> comes in.
+            </div>
+            <a href="#services" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">
+              <span>See How We Manage Projects</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Comparison Cards (Col 7-12) -->
+        <div class="lg:col-span-6 space-y-4 reveal-on-scroll">
+          
+          <!-- Card: Without PMC -->
+          <div class="p-6 rounded-2xl glass-panel border border-rose-900/30 bg-slate-900/70 relative">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono uppercase tracking-wider text-rose-400 font-semibold flex items-center gap-1.5">
+                <i data-lucide="x-circle" class="w-4 h-4"></i> Without a Dedicated PMC
+              </span>
+              <span class="text-[11px] text-slate-500 font-mono">High Risk / Friction</span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="x" class="w-4 h-4 text-rose-400 mt-0.5 flex-shrink-0"></i>
+                <span>Client personally fields 30+ daily calls from disjointed contractors.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="x" class="w-4 h-4 text-rose-400 mt-0.5 flex-shrink-0"></i>
+                <span>Contractors blame designers; designers blame site conditions.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="x" class="w-4 h-4 text-rose-400 mt-0.5 flex-shrink-0"></i>
+                <span>Snags and substandard workmanship discovered only after handover.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="x" class="w-4 h-4 text-rose-400 mt-0.5 flex-shrink-0"></i>
+                <span>Uncontrolled budget creep and hidden site variation approvals.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card: With BuildIQ PMC -->
+          <div class="p-6 rounded-2xl glass-panel border border-blue-600/40 bg-slate-900/90 relative shadow-xl shadow-blue-950/50">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono uppercase tracking-wider text-blue-400 font-semibold flex items-center gap-1.5">
+                <i data-lucide="check-circle" class="w-4 h-4 text-blue-400"></i> With BuildIQ Projects (PMC)
+              </span>
+              <span class="text-[11px] bg-blue-950 text-blue-400 px-2 py-0.5 rounded font-mono">Structured Control</span>
+            </div>
+            <ul class="space-y-2.5 text-sm text-slate-200">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0"></i>
+                <span><strong>Single point of accountability:</strong> BuildIQ coordinates all trades and vendors.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0"></i>
+                <span><strong>Independent quality checks:</strong> Tolerances & specs audited at every milestone.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0"></i>
+                <span><strong>Transparent reporting:</strong> Clear weekly dashboards, open issues, and pending decisions.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0"></i>
+                <span><strong>Peace of mind:</strong> You stay informed while we manage the complex moving parts.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       04. SECTION — WHAT PMC MEANS (VISUAL SYSTEM)
+       ========================================================================= -->
+  <section id="what-is-pmc" class="py-20 lg:py-28 bg-brand-dark relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50 mb-3">
+          <i data-lucide="help-circle" class="w-3.5 h-3.5"></i>
+          <span>ROLE OF A PMC</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          What Does a PMC Do?
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 mt-4 leading-relaxed">
+          A <strong>Project Management Consultancy (PMC)</strong> acts as the client's project-management partner — coordinating stakeholders, monitoring progress, tracking issues, and helping keep execution aligned with the project's scope, schedule, quality, and cost objectives.
+        </p>
+      </div>
+
+      <!-- Impressive Visual System Diagram -->
+      <div class="max-w-4xl mx-auto reveal-on-scroll">
+        <div class="p-8 sm:p-10 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-700/70 shadow-2xl relative">
+          
+          <!-- Diagram Step 1: Client -->
+          <div class="text-center">
+            <div class="inline-flex flex-col items-center p-4 sm:px-8 rounded-xl bg-slate-800/90 border border-slate-700 shadow-md">
+              <div class="w-10 h-10 rounded-full bg-blue-900/60 border border-blue-500/50 flex items-center justify-center text-blue-400 mb-1">
+                <i data-lucide="user-check" class="w-5 h-5"></i>
+              </div>
+              <span class="text-xs font-mono uppercase tracking-widest text-slate-400">PROJECT OWNER / DEVELOPER</span>
+              <span class="text-base sm:text-lg font-extrabold text-white">THE CLIENT</span>
+              <span class="text-[11px] text-slate-400">Defines Vision • Approves Decisions • Receives Clear Reports</span>
+            </div>
+          </div>
+
+          <!-- Down Arrow 1 -->
+          <div class="flex justify-center my-4">
+            <div class="flex flex-col items-center text-blue-400">
+              <span class="text-[10px] font-mono uppercase tracking-widest text-slate-500 mb-1">Delegates Management Layer</span>
+              <i data-lucide="arrow-down" class="w-6 h-6 animate-bounce"></i>
+            </div>
+          </div>
+
+          <!-- Diagram Step 2: BUILDIQ PMC Hub (Center Piece) -->
+          <div class="text-center">
+            <div class="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-blue-950/90 via-slate-900 to-blue-900/40 border-2 border-blue-500 shadow-2xl shadow-blue-900/50 relative overflow-hidden">
+              <div class="absolute top-2 right-3 text-[10px] font-mono text-blue-400 uppercase tracking-wider bg-blue-950 px-2 py-0.5 rounded border border-blue-800">
+                CLIENT-SIDE PMC LAYER
+              </div>
+              <div class="w-12 h-12 mx-auto rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-lg mb-2">
+                <i data-lucide="shield" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
+                BUILDIQ PROJECTS
+              </h3>
+              <p class="text-xs sm:text-sm font-mono text-blue-300 mt-1">
+                Planning • Coordination • Site Oversight • Quality Control • Milestone Tracking
+              </p>
+            </div>
+          </div>
+
+          <!-- Down Arrow 2 -->
+          <div class="flex justify-center my-4">
+            <div class="flex flex-col items-center text-blue-400">
+              <span class="text-[10px] font-mono uppercase tracking-widest text-slate-500 mb-1">Coordinates & Monitors On Site</span>
+              <i data-lucide="arrow-down" class="w-6 h-6 animate-bounce"></i>
+            </div>
+          </div>
+
+          <!-- Diagram Step 3: Stakeholders Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 text-center text-xs">
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors">
+              <i data-lucide="pen-tool" class="w-5 h-5 mx-auto text-cyan-400 mb-1.5"></i>
+              <span class="font-semibold text-slate-200 block">Designers</span>
+              <span class="text-[10px] text-slate-400">Architects & Detailers</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors">
+              <i data-lucide="cpu" class="w-5 h-5 mx-auto text-cyan-400 mb-1.5"></i>
+              <span class="font-semibold text-slate-200 block">Consultants</span>
+              <span class="text-[10px] text-slate-400">MEP, Structural, Acoustical</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors">
+              <i data-lucide="hard-hat" class="w-5 h-5 mx-auto text-amber-400 mb-1.5"></i>
+              <span class="font-semibold text-slate-200 block">Contractors</span>
+              <span class="text-[10px] text-slate-400">Civil, Joinery, Electrical</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors">
+              <i data-lucide="truck" class="w-5 h-5 mx-auto text-amber-400 mb-1.5"></i>
+              <span class="font-semibold text-slate-200 block">Vendors</span>
+              <span class="text-[10px] text-slate-400">Materials, HVAC, Finishes</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors col-span-2 sm:col-span-1">
+              <i data-lucide="users" class="w-5 h-5 mx-auto text-emerald-400 mb-1.5"></i>
+              <span class="font-semibold text-slate-200 block">Site Teams</span>
+              <span class="text-[10px] text-slate-400">Supervisors & Trade Crews</span>
+            </div>
+          </div>
+
+          <!-- Down Arrow 3 -->
+          <div class="flex justify-center my-4">
+            <div class="flex flex-col items-center text-emerald-400">
+              <i data-lucide="arrow-down" class="w-6 h-6"></i>
+            </div>
+          </div>
+
+          <!-- Diagram Step 4: Outcome -->
+          <div class="text-center">
+            <div class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-emerald-950/60 border border-emerald-800/60 text-emerald-300 font-bold text-sm tracking-wide">
+              <i data-lucide="award" class="w-5 h-5 text-emerald-400"></i>
+              <span>COMPLETED PROJECT — VERIFIED QUALITY & TIMELY HANDOVER</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       05. SECTION — CORE SERVICES (8 SERVICES)
+       ========================================================================= -->
+  <section id="services" class="py-20 lg:py-28 bg-brand-surface/60 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50 mb-3">
+          <i data-lucide="briefcase" class="w-3.5 h-3.5"></i>
+          <span>PMC SERVICE SUITE</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          One Management Layer. The Whole Project.
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 mt-4">
+          Eight integrated project management services designed to ensure structure, coordination, and control across every project phase.
+        </p>
+      </div>
+
+      <!-- 8 Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- 01 — PROJECT PLANNING -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 flex flex-col justify-between reveal-on-scroll hover:border-blue-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950 px-2 py-0.5 rounded border border-blue-900">01</span>
+              <i data-lucide="calendar-range" class="w-6 h-6 text-slate-400 group-hover:text-blue-400 transition-colors"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">PROJECT PLANNING</h3>
+            <p class="text-xs text-blue-300 font-medium mb-3">Turn project requirements into a structured execution plan.</p>
+            <ul class="space-y-1.5 text-xs text-slate-400 border-t border-slate-800/80 pt-3">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Scope understanding</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Project master planning</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Work sequencing</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Milestone planning</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Coordination structure</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 02 — CONTRACTOR & VENDOR COORDINATION -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 flex flex-col justify-between reveal-on-scroll hover:border-blue-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950 px-2 py-0.5 rounded border border-blue-900">02</span>
+              <i data-lucide="users-2" class="w-6 h-6 text-slate-400 group-hover:text-blue-400 transition-colors"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">CONTRACTOR & VENDOR COORDINATION</h3>
+            <p class="text-xs text-blue-300 font-medium mb-3">Keep the people executing the project aligned.</p>
+            <ul class="space-y-1.5 text-xs text-slate-400 border-t border-slate-800/80 pt-3">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Contractor coordination</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Vendor alignment</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Work sequencing & handoffs</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Responsibility matrix</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Communication management</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 03 — SITE MANAGEMENT -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 flex flex-col justify-between reveal-on-scroll hover:border-blue-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950 px-2 py-0.5 rounded border border-blue-900">03</span>
+              <i data-lucide="hard-hat" class="w-6 h-6 text-slate-400 group-hover:text-blue-400 transition-colors"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">SITE MANAGEMENT</h3>
+            <p class="text-xs text-blue-300 font-medium mb-3">Maintain visibility over what is happening on site.</p>
+            <ul class="space-y-1.5 text-xs text-slate-400 border-t border-slate-800/80 pt-3">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Site progress monitoring</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Execution review</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Trade coordination</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Issue identification</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Daily/weekly site logs</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 04 — QUALITY MONITORING -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 flex flex-col justify-between reveal-on-scroll hover:border-blue-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950 px-2 py-0.5 rounded border border-blue-900">04</span>
+              <i data-lucide="badge-check" class="w-6 h-6 text-slate-400 group-hover:text-blue-400 transition-colors"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">QUALITY MONITORING</h3>
+            <p class="text-xs text-blue-300 font-medium mb-3">Help maintain expected standards of workmanship.</p>
+            <ul class="space-y-1.5 text-xs text-slate-400 border-t border-slate-800/80 pt-3">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Workmanship review</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Material verification</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Execution checks</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Defect identification</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Rectification tracking</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 05 — COST & CHANGE MANAGEMENT -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 flex flex-col justify-between reveal-on-scroll hover:border-blue-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950 px-2 py-0.5 rounded border border-blue-900">05</span>
+              <i data-lucide="calculator" class="w-6 h-6 text-slate-400 group-hover:text-blue-400 transition-colors"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">COST & CHANGE MANAGEMENT</h3>
+            <p class="text-xs text-blue-300 font-medium mb-3">Maintain visibility over changes and cost decisions.</p>
+            <ul class="space-y-1.5 text-xs text-slate-400 border-t border-slate-800/80 pt-3">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Budget monitoring</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Quantity & cost review</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Variation tracking</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Change coordination</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Client approval tracking</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 06 — SCHEDULE MANAGEMENT -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 flex flex-col justify-between reveal-on-scroll hover:border-blue-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950 px-2 py-0.5 rounded border border-blue-900">06</span>
+              <i data-lucide="clock" class="w-6 h-6 text-slate-400 group-hover:text-blue-400 transition-colors"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">SCHEDULE MANAGEMENT</h3>
+            <p class="text-xs text-blue-300 font-medium mb-3">Keep project milestones visible and actionable.</p>
+            <ul class="space-y-1.5 text-xs text-slate-400 border-t border-slate-800/80 pt-3">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Project master schedules</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Milestone tracking</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Progress monitoring</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Delay identification</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Corrective-action coordination</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 07 — DESIGN & EXECUTION COORDINATION -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 flex flex-col justify-between reveal-on-scroll hover:border-blue-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950 px-2 py-0.5 rounded border border-blue-900">07</span>
+              <i data-lucide="file-check" class="w-6 h-6 text-slate-400 group-hover:text-blue-400 transition-colors"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">DESIGN & EXECUTION COORDINATION</h3>
+            <p class="text-xs text-blue-300 font-medium mb-3">Connect design intent with what happens on site.</p>
+            <ul class="space-y-1.5 text-xs text-slate-400 border-t border-slate-800/80 pt-3">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Client alignment</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Designer drawing review</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> MEP consultant sync</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Contractor execution check</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Vendor specification match</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 08 — HANDOVER & CLOSEOUT -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 flex flex-col justify-between reveal-on-scroll hover:border-blue-500/50 transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950 px-2 py-0.5 rounded border border-blue-900">08</span>
+              <i data-lucide="key" class="w-6 h-6 text-slate-400 group-hover:text-blue-400 transition-colors"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">HANDOVER & CLOSEOUT</h3>
+            <p class="text-xs text-blue-300 font-medium mb-3">Bring the project through final stage with structure.</p>
+            <ul class="space-y-1.5 text-xs text-slate-400 border-t border-slate-800/80 pt-3">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Final inspection audits</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Comprehensive snag listing</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Rectification tracking</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Completion coordination</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> Structured handover</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       06. SECTION — THE BUILDIQ METHOD (6-STEP PROCESS)
+       ========================================================================= -->
+  <section id="method" class="py-20 lg:py-28 bg-brand-dark relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50 mb-3">
+          <i data-lucide="workflow" class="w-3.5 h-3.5"></i>
+          <span>PMC METHODOLOGY</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          A Better Way to Manage Projects.
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 mt-4">
+          Our six-step methodology establishes clarity before site activity begins, tracks every critical milestone, and coordinates through to snag-free delivery.
+        </p>
+      </div>
+
+      <!-- Desktop Horizontal Timeline / Mobile Vertical Timeline -->
+      <div class="relative process-timeline hidden lg:grid grid-cols-6 gap-4 reveal-on-scroll">
+        
+        <!-- Step 1 -->
+        <div class="process-step flex flex-col items-center text-center p-4 rounded-xl glass-panel border border-slate-800 relative z-10">
+          <div class="w-12 h-12 rounded-full bg-blue-600 border-4 border-brand-dark flex items-center justify-center text-white font-mono font-bold text-sm shadow-lg mb-3">
+            01
+          </div>
+          <h4 class="text-base font-bold text-white mb-1 uppercase tracking-wide">UNDERSTAND</h4>
+          <p class="text-xs text-slate-400">
+            Understand client's objectives, requirements, and scope.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step flex flex-col items-center text-center p-4 rounded-xl glass-panel border border-slate-800 relative z-10">
+          <div class="w-12 h-12 rounded-full bg-blue-600 border-4 border-brand-dark flex items-center justify-center text-white font-mono font-bold text-sm shadow-lg mb-3">
+            02
+          </div>
+          <h4 class="text-base font-bold text-white mb-1 uppercase tracking-wide">PLAN</h4>
+          <p class="text-xs text-slate-400">
+            Build project structure, schedule, and coordination framework.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step flex flex-col items-center text-center p-4 rounded-xl glass-panel border border-slate-800 relative z-10">
+          <div class="w-12 h-12 rounded-full bg-blue-600 border-4 border-brand-dark flex items-center justify-center text-white font-mono font-bold text-sm shadow-lg mb-3">
+            03
+          </div>
+          <h4 class="text-base font-bold text-white mb-1 uppercase tracking-wide">COORDINATE</h4>
+          <p class="text-xs text-slate-400">
+            Align contractors, vendors, consultants, and stakeholders.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step flex flex-col items-center text-center p-4 rounded-xl glass-panel border border-slate-800 relative z-10">
+          <div class="w-12 h-12 rounded-full bg-blue-600 border-4 border-brand-dark flex items-center justify-center text-white font-mono font-bold text-sm shadow-lg mb-3">
+            04
+          </div>
+          <h4 class="text-base font-bold text-white mb-1 uppercase tracking-wide">MONITOR</h4>
+          <p class="text-xs text-slate-400">
+            Track site progress, quality, issues, and milestones.
+          </p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="process-step flex flex-col items-center text-center p-4 rounded-xl glass-panel border border-slate-800 relative z-10">
+          <div class="w-12 h-12 rounded-full bg-blue-600 border-4 border-brand-dark flex items-center justify-center text-white font-mono font-bold text-sm shadow-lg mb-3">
+            05
+          </div>
+          <h4 class="text-base font-bold text-white mb-1 uppercase tracking-wide">CONTROL</h4>
+          <p class="text-xs text-slate-400">
+            Identify deviations and coordinate corrective actions.
+          </p>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="process-step flex flex-col items-center text-center p-4 rounded-xl glass-panel border border-slate-800 relative z-10">
+          <div class="w-12 h-12 rounded-full bg-emerald-600 border-4 border-brand-dark flex items-center justify-center text-white font-mono font-bold text-sm shadow-lg mb-3">
+            06
+          </div>
+          <h4 class="text-base font-bold text-white mb-1 uppercase tracking-wide">DELIVER</h4>
+          <p class="text-xs text-slate-400">
+            Coordinate completion, snagging, and handover.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Mobile Vertical Timeline -->
+      <div class="lg:hidden relative process-timeline-mobile space-y-6 pl-4 reveal-on-scroll">
+        
+        <!-- Mobile Step 1 -->
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-mono font-bold text-xs flex-shrink-0 z-10">
+            01
+          </div>
+          <div class="p-4 rounded-xl glass-panel border border-slate-800 flex-1">
+            <h4 class="text-base font-bold text-white uppercase">01 — UNDERSTAND</h4>
+            <p class="text-xs text-slate-400 mt-1">Understand the client's objectives, requirements, and scope.</p>
+          </div>
+        </div>
+
+        <!-- Mobile Step 2 -->
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-mono font-bold text-xs flex-shrink-0 z-10">
+            02
+          </div>
+          <div class="p-4 rounded-xl glass-panel border border-slate-800 flex-1">
+            <h4 class="text-base font-bold text-white uppercase">02 — PLAN</h4>
+            <p class="text-xs text-slate-400 mt-1">Build the project structure, schedule, and coordination framework.</p>
+          </div>
+        </div>
+
+        <!-- Mobile Step 3 -->
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-mono font-bold text-xs flex-shrink-0 z-10">
+            03
+          </div>
+          <div class="p-4 rounded-xl glass-panel border border-slate-800 flex-1">
+            <h4 class="text-base font-bold text-white uppercase">03 — COORDINATE</h4>
+            <p class="text-xs text-slate-400 mt-1">Align contractors, vendors, consultants, and stakeholders.</p>
+          </div>
+        </div>
+
+        <!-- Mobile Step 4 -->
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-mono font-bold text-xs flex-shrink-0 z-10">
+            04
+          </div>
+          <div class="p-4 rounded-xl glass-panel border border-slate-800 flex-1">
+            <h4 class="text-base font-bold text-white uppercase">04 — MONITOR</h4>
+            <p class="text-xs text-slate-400 mt-1">Track site progress, quality, issues, and milestones.</p>
+          </div>
+        </div>
+
+        <!-- Mobile Step 5 -->
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-mono font-bold text-xs flex-shrink-0 z-10">
+            05
+          </div>
+          <div class="p-4 rounded-xl glass-panel border border-slate-800 flex-1">
+            <h4 class="text-base font-bold text-white uppercase">05 — CONTROL</h4>
+            <p class="text-xs text-slate-400 mt-1">Identify deviations and coordinate corrective actions.</p>
+          </div>
+        </div>
+
+        <!-- Mobile Step 6 -->
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white font-mono font-bold text-xs flex-shrink-0 z-10">
+            06
+          </div>
+          <div class="p-4 rounded-xl glass-panel border border-slate-800 flex-1">
+            <h4 class="text-base font-bold text-white uppercase">06 — DELIVER</h4>
+            <p class="text-xs text-slate-400 mt-1">Coordinate completion, snagging, and handover.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       07. SECTION — FOUR PILLARS
+       ========================================================================= -->
+  <section id="pillars" class="py-20 lg:py-28 bg-brand-surface/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50 mb-3">
+          <i data-lucide="grid" class="w-3.5 h-3.5"></i>
+          <span>CORE GOVERNANCE</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          The Four Things We Help You Control.
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 mt-4">
+          Complex projects succeed when four fundamental dimensions are managed simultaneously.
+        </p>
+      </div>
+
+      <!-- 4 Pillars Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Pillar: TIME -->
+        <div class="p-8 rounded-2xl glass-panel technical-border bg-slate-900/90 border border-slate-800 reveal-on-scroll">
+          <div class="w-12 h-12 rounded-xl bg-blue-950 border border-blue-800/60 flex items-center justify-center text-blue-400 mb-6">
+            <i data-lucide="clock-9" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-2xl font-extrabold text-white mb-2 font-sans">TIME</h3>
+          <p class="text-sm text-slate-300 mb-6">
+            Know where the project stands against planned milestones and critical path items.
+          </p>
+          <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800/80 font-mono text-xs text-slate-400 space-y-1">
+            <div class="flex justify-between"><span>Milestone Tracking:</span> <span class="text-blue-400">Weekly</span></div>
+            <div class="flex justify-between"><span>Critical Path:</span> <span class="text-slate-200">Monitored</span></div>
+          </div>
+        </div>
+
+        <!-- Pillar: COST -->
+        <div class="p-8 rounded-2xl glass-panel technical-border bg-slate-900/90 border border-slate-800 reveal-on-scroll">
+          <div class="w-12 h-12 rounded-xl bg-blue-950 border border-blue-800/60 flex items-center justify-center text-blue-400 mb-6">
+            <i data-lucide="trending-up" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-2xl font-extrabold text-white mb-2 font-sans">COST</h3>
+          <p class="text-sm text-slate-300 mb-6">
+            Maintain visibility over project variations, change orders, and cost-related decisions.
+          </p>
+          <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800/80 font-mono text-xs text-slate-400 space-y-1">
+            <div class="flex justify-between"><span>Variation Audits:</span> <span class="text-blue-400">Rigorous</span></div>
+            <div class="flex justify-between"><span>Change Approvals:</span> <span class="text-slate-200">Structured</span></div>
+          </div>
+        </div>
+
+        <!-- Pillar: QUALITY -->
+        <div class="p-8 rounded-2xl glass-panel technical-border bg-slate-900/90 border border-slate-800 reveal-on-scroll">
+          <div class="w-12 h-12 rounded-xl bg-blue-950 border border-blue-800/60 flex items-center justify-center text-blue-400 mb-6">
+            <i data-lucide="shield-alert" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-2xl font-extrabold text-white mb-2 font-sans">QUALITY</h3>
+          <p class="text-sm text-slate-300 mb-6">
+            Monitor execution, workmanship, material specifications, and defect rectification on site.
+          </p>
+          <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800/80 font-mono text-xs text-slate-400 space-y-1">
+            <div class="flex justify-between"><span>Site Tolerance Audits:</span> <span class="text-blue-400">Strict</span></div>
+            <div class="flex justify-between"><span>Snag Resolution:</span> <span class="text-slate-200">Tracked</span></div>
+          </div>
+        </div>
+
+        <!-- Pillar: COORDINATION -->
+        <div class="p-8 rounded-2xl glass-panel technical-border bg-slate-900/90 border border-slate-800 reveal-on-scroll">
+          <div class="w-12 h-12 rounded-xl bg-blue-950 border border-blue-800/60 flex items-center justify-center text-blue-400 mb-6">
+            <i data-lucide="network" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-2xl font-extrabold text-white mb-2 font-sans">COORDINATION</h3>
+          <p class="text-sm text-slate-300 mb-6">
+            Keep project stakeholders, trade contractors, designers, and site teams aligned.
+          </p>
+          <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800/80 font-mono text-xs text-slate-400 space-y-1">
+            <div class="flex justify-between"><span>Stakeholder Sync:</span> <span class="text-blue-400">Synchronized</span></div>
+            <div class="flex justify-between"><span>Handoff Management:</span> <span class="text-slate-200">Active</span></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       08. SECTION — CLIENT BENEFIT
+       ========================================================================= -->
+  <section class="py-20 lg:py-28 bg-brand-dark relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50 mb-3">
+          <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+          <span>THE CLIENT ADVANTAGE</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          You Stay Informed. We Manage the Moving Parts.
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 mt-4 leading-relaxed">
+          BuildIQ provides clients with a structured management layer between their project goals and the teams executing the work on site.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Benefit 1 -->
+        <div class="p-8 rounded-2xl glass-panel technical-border bg-slate-900/70 border border-slate-800 reveal-on-scroll">
+          <div class="w-14 h-14 rounded-2xl bg-blue-950/80 border border-blue-800/60 flex items-center justify-center text-blue-400 mb-6">
+            <i data-lucide="phone-off" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">LESS CHASING</h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">
+            Reduce the need to personally coordinate every trade, resolve site finger-pointing, or chase daily progress updates from contractors.
+          </p>
+          <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-800/80 pt-4">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400"></i> Centralized site communication</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400"></i> Single management interface</li>
+          </ul>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="p-8 rounded-2xl glass-panel technical-border bg-slate-900/70 border border-slate-800 reveal-on-scroll">
+          <div class="w-14 h-14 rounded-2xl bg-blue-950/80 border border-blue-800/60 flex items-center justify-center text-blue-400 mb-6">
+            <i data-lucide="line-chart" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">MORE VISIBILITY</h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">
+            Understand project status with clear, structured reports highlighting milestone progress, open issues, and pending decisions.
+          </p>
+          <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-800/80 pt-4">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400"></i> Structured weekly reporting</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400"></i> Transparent issue tracking</li>
+          </ul>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="p-8 rounded-2xl glass-panel technical-border bg-slate-900/70 border border-slate-800 reveal-on-scroll">
+          <div class="w-14 h-14 rounded-2xl bg-blue-950/80 border border-blue-800/60 flex items-center justify-center text-blue-400 mb-6">
+            <i data-lucide="shield-check" class="w-7 h-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">BETTER CONTROL</h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">
+            Keep scope, quality checks, schedule alignment, and site coordination visible so decisions are made early and with complete clarity.
+          </p>
+          <ul class="text-xs text-slate-400 space-y-2 border-t border-slate-800/80 pt-4">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400"></i> Objective quality benchmarks</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400"></i> Structured decision gateways</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       09. SECTION — PROJECT CONTROL (CONCEPTUAL DASHBOARD)
+       ========================================================================= -->
+  <section id="control-dashboard" class="py-20 lg:py-28 bg-brand-surface/40 relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50 mb-3">
+          <i data-lucide="activity" class="w-3.5 h-3.5"></i>
+          <span>PROJECT OVERSIGHT INTERFACE</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          See the Project. Understand the Project. Control the Project.
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 mt-4">
+          Experience the structured visibility BuildIQ delivers through proactive milestone governance and site issue tracking.
+        </p>
+
+        <!-- Mandatory Disclaimer Tag -->
+        <div class="inline-block mt-4 px-3 py-1 rounded bg-slate-900 border border-slate-800 text-[11px] font-mono text-slate-400">
+          <i data-lucide="info" class="w-3.5 h-3.5 inline mr-1 text-blue-400"></i>
+          Conceptual representation of the BuildIQ management approach, not actual client data.
+        </div>
+      </div>
+
+      <!-- Dashboard Interactive Container -->
+      <div class="max-w-5xl mx-auto rounded-2xl glass-panel technical-border bg-slate-900/90 border border-slate-700/80 shadow-2xl overflow-hidden reveal-on-scroll">
+        
+        <!-- Dashboard Top Bar -->
+        <div class="px-6 py-4 bg-slate-950 border-b border-slate-800 flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div class="flex gap-1.5">
+              <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+              <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+              <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+            </div>
+            <span class="text-xs font-mono text-slate-300 font-semibold tracking-wider uppercase">
+              PMC EXECUTIVE DASHBOARD // PROJECT STATUS
+            </span>
+          </div>
+
+          <!-- Tab Navigation for Dashboard -->
+          <div class="flex items-center gap-1.5 p-1 bg-slate-900 rounded-lg border border-slate-800 text-xs font-mono">
+            <button class="dashboard-tab-btn px-3 py-1.5 rounded-md active bg-blue-600 text-white font-medium transition-all" data-tab="tab-overview">
+              Overview
+            </button>
+            <button class="dashboard-tab-btn px-3 py-1.5 rounded-md bg-slate-800/60 text-slate-400 hover:text-white transition-all" data-tab="tab-milestones">
+              Milestones (7/10)
+            </button>
+            <button class="dashboard-tab-btn px-3 py-1.5 rounded-md bg-slate-800/60 text-slate-400 hover:text-white transition-all" data-tab="tab-issues">
+              Issues & Actions (12)
+            </button>
+            <button class="dashboard-tab-btn px-3 py-1.5 rounded-md bg-slate-800/60 text-slate-400 hover:text-white transition-all" data-tab="tab-quality">
+              Quality Log
+            </button>
+          </div>
+        </div>
+
+        <!-- Tab 1: Overview Panel -->
+        <div id="tab-overview" class="dashboard-tab-panel p-6 sm:p-8 space-y-6">
+          
+          <!-- Key Metric KPI Strip -->
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
+            
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+              <div class="text-[11px] font-mono text-slate-400 uppercase">Schedule Status</div>
+              <div class="text-lg font-bold text-emerald-400 mt-1 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>On Track</span>
+              </div>
+              <span class="text-[10px] text-slate-500 font-mono">Baseline Rev. 2.1</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+              <div class="text-[11px] font-mono text-slate-400 uppercase">Quality Audits</div>
+              <div class="text-lg font-bold text-blue-400 mt-1 flex items-center gap-1.5">
+                <i data-lucide="check-check" class="w-4 h-4 text-blue-400"></i>
+                <span>Reviewed</span>
+              </div>
+              <span class="text-[10px] text-slate-500 font-mono">Tolerances Pass</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+              <div class="text-[11px] font-mono text-slate-400 uppercase">Open Issues</div>
+              <div class="text-lg font-bold text-amber-400 mt-1 flex items-center gap-1.5">
+                <i data-lucide="alert-circle" class="w-4 h-4 text-amber-400"></i>
+                <span>12 Active</span>
+              </div>
+              <span class="text-[10px] text-slate-500 font-mono">8 in Rectification</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
+              <div class="text-[11px] font-mono text-slate-400 uppercase">Pending Decisions</div>
+              <div class="text-lg font-bold text-cyan-400 mt-1 flex items-center gap-1.5">
+                <i data-lucide="clock" class="w-4 h-4 text-cyan-400"></i>
+                <span>4 Client Approvals</span>
+              </div>
+              <span class="text-[10px] text-slate-500 font-mono">Specs & Finishes</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 col-span-2 sm:col-span-1">
+              <div class="text-[11px] font-mono text-slate-400 uppercase">Milestone Progress</div>
+              <div class="text-lg font-bold text-white mt-1">
+                <span>7 / 10 Completed</span>
+              </div>
+              <span class="text-[10px] text-slate-500 font-mono">70% Stage Target</span>
+            </div>
+
+          </div>
+
+          <!-- Conceptual Gantt & Milestone View -->
+          <div class="p-5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-4">
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-slate-300 font-bold uppercase font-mono tracking-wider">PROJECT MASTER TIMELINE & CRITICAL PATH</span>
+              <span class="text-slate-400 font-mono text-[11px]">Current Phase: MEP & Wall Finishes</span>
+            </div>
+
+            <div class="space-y-3 font-mono text-xs">
+              <!-- Task 1 -->
+              <div>
+                <div class="flex justify-between text-slate-300 mb-1">
+                  <span>Phase 1 — Structural & Civil Works</span>
+                  <span class="text-emerald-400">Completed (100%)</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div class="bg-emerald-500 h-full w-full"></div>
+                </div>
+              </div>
+
+              <!-- Task 2 -->
+              <div>
+                <div class="flex justify-between text-slate-300 mb-1">
+                  <span>Phase 2 — MEP Rough-Ins & HVAC Ducting</span>
+                  <span class="text-emerald-400">Completed (100%)</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div class="bg-emerald-500 h-full w-full"></div>
+                </div>
+              </div>
+
+              <!-- Task 3 -->
+              <div>
+                <div class="flex justify-between text-slate-300 mb-1">
+                  <span class="text-white font-semibold">Phase 3 — Drywall, Ceilings & Tiling Works</span>
+                  <span class="text-blue-400 font-bold">In Progress (82%)</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div class="bg-blue-500 h-full w-[82%]"></div>
+                </div>
+              </div>
+
+              <!-- Task 4 -->
+              <div>
+                <div class="flex justify-between text-slate-400 mb-1">
+                  <span>Phase 4 — Millwork, Joinery & Surface Finishes</span>
+                  <span class="text-amber-400">Upcoming (Sequenced)</span>
+                </div>
+                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                  <div class="bg-slate-700 h-full w-[0%]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Action Prompt -->
+          <div class="flex flex-wrap items-center justify-between gap-4 pt-2 text-xs border-t border-slate-800">
+            <span class="text-slate-400">
+              Weekly PMC site inspection reports are synthesized into actionable summaries for leadership.
+            </span>
+            <button class="open-report-modal-btn text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-1.5">
+              <i data-lucide="file-text" class="w-4 h-4"></i>
+              <span>View Illustrative Weekly Report</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Tab 2: Milestones Panel -->
+        <div id="tab-milestones" class="dashboard-tab-panel p-6 sm:p-8 space-y-4 hidden">
+          <div class="text-xs font-mono text-slate-400 uppercase mb-2">Milestone Governance Tracker (7 of 10 Completed)</div>
+          <div class="space-y-2.5 text-xs font-mono">
+            <div class="p-3 rounded-lg bg-slate-950/70 border border-slate-800 flex items-center justify-between">
+              <span class="text-slate-200">M01 — Scope & Baseline Budget Sign-off</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">Completed</span>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-950/70 border border-slate-800 flex items-center justify-between">
+              <span class="text-slate-200">M02 — Contractor Packages & Scope Alignment</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">Completed</span>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-950/70 border border-slate-800 flex items-center justify-between">
+              <span class="text-slate-200">M03 — Site Demolition & Base Preparation</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">Completed</span>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-950/70 border border-slate-800 flex items-center justify-between">
+              <span class="text-slate-200">M04 — MEP Rough-Ins & Pressure Testing</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">Completed</span>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-950/70 border border-slate-800 flex items-center justify-between">
+              <span class="text-slate-200">M05 — Flooring & Waterproofing Tolerance Audit</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">Completed</span>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-950/70 border border-slate-800 flex items-center justify-between">
+              <span class="text-slate-200">M06 — Ceiling Framework & Lighting Channels</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">Completed</span>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-950/70 border border-slate-800 flex items-center justify-between">
+              <span class="text-slate-200">M07 — Carpentry & Fixed Joinery Carcass</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800">Completed</span>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-950/70 border border-blue-900/60 flex items-center justify-between bg-blue-950/30">
+              <span class="text-white font-semibold">M08 — Surface Finishes & Veneer Polishing</span>
+              <span class="px-2 py-0.5 rounded bg-blue-900/60 text-blue-300 border border-blue-700">Active (In Review)</span>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-950/70 border border-slate-800 flex items-center justify-between opacity-60">
+              <span class="text-slate-400">M09 — Fixture Installation & MEP Commissioning</span>
+              <span class="px-2 py-0.5 rounded bg-slate-900 text-slate-500 border border-slate-800">Upcoming</span>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-950/70 border border-slate-800 flex items-center justify-between opacity-60">
+              <span class="text-slate-400">M10 — Final Snag Audit & Handover Dossier</span>
+              <span class="px-2 py-0.5 rounded bg-slate-900 text-slate-500 border border-slate-800">Closeout Gate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Issues Panel -->
+        <div id="tab-issues" class="dashboard-tab-panel p-6 sm:p-8 space-y-4 hidden">
+          <div class="text-xs font-mono text-slate-400 uppercase mb-2">Live Site Issue Log & Rectification Status</div>
+          <div class="space-y-3 text-xs">
+            <div class="p-3.5 rounded-lg bg-slate-950/70 border-l-4 border-l-amber-500 border border-slate-800 flex items-start justify-between">
+              <div>
+                <span class="font-bold text-white">HVAC Duct Clearance Conflict with Living Area Ceiling</span>
+                <p class="text-slate-400 mt-0.5">BuildIQ coordinated with MEP consultant to re-route secondary duct. Zero ceiling height compromise.</p>
+              </div>
+              <span class="px-2 py-1 rounded bg-amber-950 text-amber-300 font-mono text-[10px]">Rectifying</span>
+            </div>
+            <div class="p-3.5 rounded-lg bg-slate-950/70 border-l-4 border-l-emerald-500 border border-slate-800 flex items-start justify-between">
+              <div>
+                <span class="font-bold text-white">Tile Batch Shade Variation (Master Bathroom)</span>
+                <p class="text-slate-400 mt-0.5">Identified prior to installation; vendor replacement coordinated within 48 hours.</p>
+              </div>
+              <span class="px-2 py-1 rounded bg-emerald-950 text-emerald-300 font-mono text-[10px]">Resolved</span>
+            </div>
+            <div class="p-3.5 rounded-lg bg-slate-950/70 border-l-4 border-l-blue-500 border border-slate-800 flex items-start justify-between">
+              <div>
+                <span class="font-bold text-white">Electrical Conduit Clash with Sliding Door Frame</span>
+                <p class="text-slate-400 mt-0.5">Site adjustment reviewed and signed off against architectural section drawing.</p>
+              </div>
+              <span class="px-2 py-1 rounded bg-blue-950 text-blue-300 font-mono text-[10px]">Coordinated</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Quality Log Panel -->
+        <div id="tab-quality" class="dashboard-tab-panel p-6 sm:p-8 space-y-4 hidden">
+          <div class="text-xs font-mono text-slate-400 uppercase mb-2">Quality & Tolerance Inspection Verification</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono">
+            <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
+              <div class="flex items-center justify-between text-slate-300">
+                <span>Plumb & Level Tolerance</span>
+                <span class="text-emerald-400 font-bold">Passed (&lt;2mm)</span>
+              </div>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
+              <div class="flex items-center justify-between text-slate-300">
+                <span>Waterproofing Ponding Test</span>
+                <span class="text-emerald-400 font-bold">72hr Verified</span>
+              </div>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
+              <div class="flex items-center justify-between text-slate-300">
+                <span>MEP Pressure Testing</span>
+                <span class="text-emerald-400 font-bold">10 Bar Verified</span>
+              </div>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800">
+              <div class="flex items-center justify-between text-slate-300">
+                <span>Joinery Moisture Content</span>
+                <span class="text-emerald-400 font-bold">10.2% Compliant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       10. SECTION — SITE VISIBILITY
+       ========================================================================= -->
+  <section class="py-20 lg:py-28 bg-brand-dark relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Text (Col 1-5) -->
+        <div class="lg:col-span-5 space-y-6 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50">
+            <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+            <span>SITE OVERSIGHT</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            What Happens on Site Matters.
+          </h2>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+            Plans and schedules only work when execution on site is monitored. BuildIQ maintains project visibility through coordination, progress monitoring, and issue identification.
+          </p>
+
+          <!-- Key Checkpoints Checklist -->
+          <div class="space-y-3 pt-2">
+            <div class="flex items-start gap-3 text-sm text-slate-200">
+              <div class="p-1 rounded bg-blue-950 text-blue-400 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <span><strong>Site Inspections:</strong> Routine site walk-throughs to verify work sequencing and trade compliance.</span>
+            </div>
+            <div class="flex items-start gap-3 text-sm text-slate-200">
+              <div class="p-1 rounded bg-blue-950 text-blue-400 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <span><strong>Project Drawings:</strong> Verifying site execution matches latest approved architectural/GFC drawings.</span>
+            </div>
+            <div class="flex items-start gap-3 text-sm text-slate-200">
+              <div class="p-1 rounded bg-blue-950 text-blue-400 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <span><strong>Laser Measurements:</strong> Checking physical tolerances, door heights, and structural alignments.</span>
+            </div>
+            <div class="flex items-start gap-3 text-sm text-slate-200">
+              <div class="p-1 rounded bg-blue-950 text-blue-400 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <span><strong>Contractor Meetings:</strong> Leading trade coordination sessions to clear road-blocks before work halts.</span>
+            </div>
+            <div class="flex items-start gap-3 text-sm text-slate-200">
+              <div class="p-1 rounded bg-blue-950 text-blue-400 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <span><strong>Material Review:</strong> Batch inspections and verifying specs prior to surface application.</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Photo & Evidence Matrix (Col 6-12) -->
+        <div class="lg:col-span-7 grid grid-cols-2 gap-4 reveal-on-scroll">
+          
+          <!-- Image 1 -->
+          <div class="relative rounded-xl overflow-hidden glass-panel border border-slate-800 group h-52">
+            <img 
+              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=700&auto=format&fit=crop" 
+              alt="BuildIQ Architectural Drawing Review & Site Coordination" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-2.5 left-2.5 right-2.5 text-[11px] font-mono text-slate-300 flex items-center justify-between">
+              <span>Drawing Alignment</span>
+              <span class="text-blue-400 font-bold">GFC Verified</span>
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="relative rounded-xl overflow-hidden glass-panel border border-slate-800 group h-52">
+            <img 
+              src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=700&auto=format&fit=crop" 
+              alt="BuildIQ Site Quality Tolerance Inspection" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-2.5 left-2.5 right-2.5 text-[11px] font-mono text-slate-300 flex items-center justify-between">
+              <span>Tolerance Check</span>
+              <span class="text-emerald-400 font-bold">Audited</span>
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div class="relative rounded-xl overflow-hidden glass-panel border border-slate-800 group h-52">
+            <img 
+              src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=700&auto=format&fit=crop" 
+              alt="BuildIQ Commercial Fitout Execution Coordination" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-2.5 left-2.5 right-2.5 text-[11px] font-mono text-slate-300 flex items-center justify-between">
+              <span>MEP Coordination</span>
+              <span class="text-cyan-400 font-bold">Synchronized</span>
+            </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div class="relative rounded-xl overflow-hidden glass-panel border border-slate-800 group h-52">
+            <img 
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=700&auto=format&fit=crop" 
+              alt="BuildIQ Luxury Handover Snag Inspection" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-2.5 left-2.5 right-2.5 text-[11px] font-mono text-slate-300 flex items-center justify-between">
+              <span>Handover Closeout</span>
+              <span class="text-amber-400 font-bold">0-Snag Gate</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       11. SECTION — REPORTING
+       ========================================================================= -->
+  <section id="reporting" class="py-20 lg:py-28 bg-brand-surface/60 relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50 mb-3">
+          <i data-lucide="file-spreadsheet" class="w-3.5 h-3.5"></i>
+          <span>TRANSPARENT GOVERNANCE</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          Clear Reporting. Faster Decisions.
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 mt-4 leading-relaxed">
+          Project management is only useful when the client knows what is happening. BuildIQ translates complex site activity into structured, high-clarity weekly reports.
+        </p>
+      </div>
+
+      <!-- 6 Visual Reporting Categories -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-12 reveal-on-scroll">
+        
+        <div class="p-4 rounded-xl glass-panel technical-border bg-slate-900/80 border border-slate-800 text-center">
+          <div class="w-9 h-9 rounded-lg bg-blue-950 mx-auto flex items-center justify-center text-blue-400 mb-2">
+            <i data-lucide="trending-up" class="w-4 h-4"></i>
+          </div>
+          <span class="text-xs font-mono font-bold text-white uppercase block">PROGRESS</span>
+          <span class="text-[10px] text-slate-400">Actual vs Planned</span>
+        </div>
+
+        <div class="p-4 rounded-xl glass-panel technical-border bg-slate-900/80 border border-slate-800 text-center">
+          <div class="w-9 h-9 rounded-lg bg-rose-950 mx-auto flex items-center justify-center text-rose-400 mb-2">
+            <i data-lucide="alert-octagon" class="w-4 h-4"></i>
+          </div>
+          <span class="text-xs font-mono font-bold text-white uppercase block">ISSUES</span>
+          <span class="text-[10px] text-slate-400">Roadblocks & Risk</span>
+        </div>
+
+        <div class="p-4 rounded-xl glass-panel technical-border bg-slate-900/80 border border-slate-800 text-center">
+          <div class="w-9 h-9 rounded-lg bg-blue-950 mx-auto flex items-center justify-center text-blue-400 mb-2">
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+          </div>
+          <span class="text-xs font-mono font-bold text-white uppercase block">MILESTONES</span>
+          <span class="text-[10px] text-slate-400">Target Stage Gates</span>
+        </div>
+
+        <div class="p-4 rounded-xl glass-panel technical-border bg-slate-900/80 border border-slate-800 text-center">
+          <div class="w-9 h-9 rounded-lg bg-emerald-950 mx-auto flex items-center justify-center text-emerald-400 mb-2">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+          </div>
+          <span class="text-xs font-mono font-bold text-white uppercase block">QUALITY</span>
+          <span class="text-[10px] text-slate-400">Inspection Logs</span>
+        </div>
+
+        <div class="p-4 rounded-xl glass-panel technical-border bg-slate-900/80 border border-slate-800 text-center">
+          <div class="w-9 h-9 rounded-lg bg-amber-950 mx-auto flex items-center justify-center text-amber-400 mb-2">
+            <i data-lucide="git-pull-request" class="w-4 h-4"></i>
+          </div>
+          <span class="text-xs font-mono font-bold text-white uppercase block">CHANGES</span>
+          <span class="text-[10px] text-slate-400">Scope Variations</span>
+        </div>
+
+        <div class="p-4 rounded-xl glass-panel technical-border bg-slate-900/80 border border-slate-800 text-center">
+          <div class="w-9 h-9 rounded-lg bg-cyan-950 mx-auto flex items-center justify-center text-cyan-400 mb-2">
+            <i data-lucide="help-circle" class="w-4 h-4"></i>
+          </div>
+          <span class="text-xs font-mono font-bold text-white uppercase block">PENDING</span>
+          <span class="text-[10px] text-slate-400">Client Decisions</span>
+        </div>
+
+      </div>
+
+      <!-- Sample Report Banner & Interactive Trigger -->
+      <div class="max-w-4xl mx-auto p-6 sm:p-8 rounded-2xl glass-panel technical-border bg-slate-900/90 border border-blue-900/50 flex flex-col sm:flex-row items-center justify-between gap-6 reveal-on-scroll">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center text-white flex-shrink-0">
+            <i data-lucide="file-text" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-[11px] font-mono text-blue-400 uppercase font-semibold">Illustrative Project Dashboard & Report</div>
+            <h4 class="text-lg font-bold text-white">BuildIQ Weekly Executive Summary Format</h4>
+            <p class="text-xs text-slate-400">Review our standardized milestone, snagging, and critical path dossier format.</p>
+          </div>
+        </div>
+        <button class="open-report-modal-btn px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs uppercase tracking-wider font-mono shadow-lg shadow-blue-600/30 transition-all flex items-center gap-2 flex-shrink-0">
+          <span>Preview Sample Report</span>
+          <i data-lucide="external-link" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       12. INTERACTIVE PMC SCOPE & COORDINATION EXPLORER
+       ========================================================================= -->
+  <section class="py-20 lg:py-28 bg-brand-dark relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50 mb-3">
+          <i data-lucide="sliders" class="w-3.5 h-3.5"></i>
+          <span>PROJECT SCOPE PLANNER</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Explore Your PMC Coordination Framework
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 mt-3">
+          Select your project parameters to understand the management layer recommended for your project.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto p-6 sm:p-10 rounded-2xl glass-panel technical-border bg-slate-900/90 border border-slate-700/80 shadow-2xl reveal-on-scroll">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          
+          <!-- Input 1: Project Type -->
+          <div>
+            <label class="block text-xs font-mono uppercase text-slate-300 mb-2 font-semibold">1. Project Category</label>
+            <select id="calc-project-type" class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 text-white font-medium">
+              <option value="residential">Residential (Villa / Luxury Apt)</option>
+              <option value="commercial">Commercial (Office / Workplace)</option>
+              <option value="interior">Interior Fit-Out (High-End)</option>
+              <option value="renovation">Renovation / Upgrades</option>
+            </select>
+          </div>
+
+          <!-- Input 2: Size -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-xs font-mono uppercase text-slate-300 font-semibold">2. Built-up Area</label>
+              <span id="calc-size-val" class="text-xs font-mono font-bold text-blue-400">4,500 sq.ft</span>
+            </div>
+            <input 
+              id="calc-project-size" 
+              type="range" 
+              min="1000" 
+              max="50000" 
+              step="500" 
+              value="4500" 
+              class="w-full accent-blue-500 cursor-pointer h-2 bg-slate-800 rounded-lg mt-3"
+            />
+            <div class="flex justify-between text-[10px] font-mono text-slate-500 mt-1">
+              <span>1k sq.ft</span>
+              <span>25k sq.ft</span>
+              <span>50k+ sq.ft</span>
+            </div>
+          </div>
+
+          <!-- Input 3: Current Stage -->
+          <div>
+            <label class="block text-xs font-mono uppercase text-slate-300 mb-2 font-semibold">3. Current Stage</label>
+            <select id="calc-project-stage" class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 text-white font-medium">
+              <option value="planning">Planning / Concept</option>
+              <option value="design">Design & BOQ Stage</option>
+              <option value="tendering">Contractor Tendering</option>
+              <option value="under_construction">Active Under Construction</option>
+              <option value="renovation">Renovation Demolition</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Calculated Recommended Framework -->
+        <div class="p-6 rounded-xl bg-slate-950 border border-blue-900/60 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <span class="text-xs font-mono uppercase text-blue-400 tracking-wider">Recommended PMC Oversight Structure</span>
+            <span class="text-[11px] font-mono bg-blue-950 text-blue-300 px-2 py-0.5 rounded">Tailored Framework</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+            <div>
+              <span class="text-slate-500 font-mono block">Management Protocol:</span>
+              <span id="res-coordination-level" class="text-white font-semibold text-sm mt-0.5 block">Comprehensive Luxury Residential PMC</span>
+            </div>
+            <div>
+              <span class="text-slate-500 font-mono block">Milestone Governance:</span>
+              <span id="res-milestones-count" class="text-blue-400 font-bold text-sm mt-0.5 block">14 Key Milestones</span>
+            </div>
+            <div>
+              <span class="text-slate-500 font-mono block">Site Oversight Intensity:</span>
+              <span id="res-weekly-hours" class="text-emerald-400 font-bold text-sm mt-0.5 block">28+ Dedicated Site Hrs</span>
+            </div>
+            <div>
+              <span class="text-slate-500 font-mono block">Critical Gate Deliverable:</span>
+              <span id="res-critical-deliverable" class="text-slate-200 font-medium text-xs mt-0.5 block">High-Tolerance Quality Audits & Millwork Inspection</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p class="text-xs text-slate-400">
+            Have specialized technical drawings or complex structural requirements?
+          </p>
+          <a href="#consultation" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-mono uppercase font-bold tracking-wider transition-all flex items-center gap-2">
+            <span>Discuss This Framework</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       13. SECTION — PROJECT TYPES
+       ========================================================================= -->
+  <section class="py-20 lg:py-28 bg-brand-surface/60 relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50 mb-3">
+          <i data-lucide="folder-kanban" class="w-3.5 h-3.5"></i>
+          <span>SECTOR EXPERTISE</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          Projects We Can Help Manage
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 mt-4">
+          Whether you are an individual owner building a luxury residence, or a corporate setting up new facilities, BuildIQ provides tailored PMC coordination.
+        </p>
+      </div>
+
+      <!-- 4 Categories Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Category 1: RESIDENTIAL -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 flex flex-col justify-between reveal-on-scroll">
+          <div>
+            <div class="h-40 rounded-xl overflow-hidden mb-4 relative">
+              <img 
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600&auto=format&fit=crop" 
+                alt="Residential Construction and Interior PMC" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <span class="absolute top-2 left-2 text-[10px] font-mono uppercase bg-slate-950/80 text-blue-400 px-2 py-0.5 rounded border border-slate-800">Residential</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">RESIDENTIAL</h3>
+            <p class="text-xs text-slate-300 mb-3">Villas, luxury residences, penthouses, and bespoke private homes.</p>
+            <ul class="text-xs text-slate-400 space-y-1 border-t border-slate-800/80 pt-3 font-mono">
+              <li>• Civil & structural coordination</li>
+              <li>• Luxury finish quality gates</li>
+              <li>• Vendor & artisan sequencing</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Category 2: COMMERCIAL -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 flex flex-col justify-between reveal-on-scroll">
+          <div>
+            <div class="h-40 rounded-xl overflow-hidden mb-4 relative">
+              <img 
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=600&auto=format&fit=crop" 
+                alt="Commercial Workplace and Office Fitout PMC" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <span class="absolute top-2 left-2 text-[10px] font-mono uppercase bg-slate-950/80 text-cyan-400 px-2 py-0.5 rounded border border-slate-800">Commercial</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">COMMERCIAL</h3>
+            <p class="text-xs text-slate-300 mb-3">Offices, corporate headquarters, retail, and business facilities.</p>
+            <ul class="text-xs text-slate-400 space-y-1 border-t border-slate-800/80 pt-3 font-mono">
+              <li>• HVAC & MEP critical path</li>
+              <li>• Strict timeline milestone control</li>
+              <li>• Landlord & base-build handoffs</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Category 3: INTERIOR -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 flex flex-col justify-between reveal-on-scroll">
+          <div>
+            <div class="h-40 rounded-xl overflow-hidden mb-4 relative">
+              <img 
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=600&auto=format&fit=crop" 
+                alt="High-End Interior Execution PMC" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <span class="absolute top-2 left-2 text-[10px] font-mono uppercase bg-slate-950/80 text-amber-400 px-2 py-0.5 rounded border border-slate-800">Interior</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">INTERIOR</h3>
+            <p class="text-xs text-slate-300 mb-3">Complex interior fit-outs, joinery, and specialized finishes.</p>
+            <ul class="text-xs text-slate-400 space-y-1 border-t border-slate-800/80 pt-3 font-mono">
+              <li>• Architectural detail verification</li>
+              <li>• Joinery & millwork inspection</li>
+              <li>• Defect & snag closeout</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Category 4: RENOVATION -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 flex flex-col justify-between reveal-on-scroll">
+          <div>
+            <div class="h-40 rounded-xl overflow-hidden mb-4 relative">
+              <img 
+                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=600&auto=format&fit=crop" 
+                alt="Renovation and Structural Upgrade PMC" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <span class="absolute top-2 left-2 text-[10px] font-mono uppercase bg-slate-950/80 text-emerald-400 px-2 py-0.5 rounded border border-slate-800">Renovation</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">RENOVATION</h3>
+            <p class="text-xs text-slate-300 mb-3">Upgrades, structural modifications, and live-space overhauls.</p>
+            <ul class="text-xs text-slate-400 space-y-1 border-t border-slate-800/80 pt-3 font-mono">
+              <li>• Structural retrofit monitoring</li>
+              <li>• Phased live-site sequencing</li>
+              <li>• MEP rerouting & safety protocol</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       14. SECTION — PROJECT EXPERIENCE
+       ========================================================================= -->
+  <section id="experience" class="py-20 lg:py-28 bg-brand-dark relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50 mb-3">
+          <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+          <span>TRACK RECORD</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          Relevant Project Experience
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 mt-4">
+          A showcase of representative construction and execution projects demonstrating the practical site understanding behind our PMC methodology.
+        </p>
+      </div>
+
+      <!-- Experience Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 overflow-hidden reveal-on-scroll group">
+          <div class="h-60 overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop" 
+              alt="Luxury Sea-Facing Penthouse Residence Mumbai" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md px-2.5 py-1 rounded text-[10px] font-mono uppercase text-blue-400 border border-slate-800">
+              Residential Penthouse
+            </div>
+            <div class="absolute bottom-3 right-3 bg-slate-950/90 backdrop-blur-md px-2.5 py-1 rounded text-[11px] font-mono text-slate-200">
+              Worli, Mumbai
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-lg font-bold text-white">Worli Luxury Duplex Penthouse</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Complete civil restructuring, double-height glazing coordination, custom Italian marble flooring tolerances, and integrated home automation.
+            </p>
+            <div class="border-t border-slate-800 pt-3 space-y-1 text-xs font-mono text-slate-300">
+              <div class="flex justify-between"><span>Scope:</span> <span class="text-white">6,800 sq.ft</span></div>
+              <div class="flex justify-between"><span>Key Role:</span> <span class="text-blue-400">Execution & Trade Coordination</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 overflow-hidden reveal-on-scroll group">
+          <div class="h-60 overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=800&auto=format&fit=crop" 
+              alt="Corporate Headquarters Commercial Office Fit-out Mumbai" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md px-2.5 py-1 rounded text-[10px] font-mono uppercase text-cyan-400 border border-slate-800">
+              Commercial Workplace
+            </div>
+            <div class="absolute bottom-3 right-3 bg-slate-950/90 backdrop-blur-md px-2.5 py-1 rounded text-[11px] font-mono text-slate-200">
+              BKC, Mumbai
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-lg font-bold text-white">BKC Financial HQ Fit-out</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Multi-phase commercial fit-out including VRV HVAC sync, modular workstations, acoustic meeting pods, and fire-life safety compliance.
+            </p>
+            <div class="border-t border-slate-800 pt-3 space-y-1 text-xs font-mono text-slate-300">
+              <div class="flex justify-between"><span>Scope:</span> <span class="text-white">18,500 sq.ft</span></div>
+              <div class="flex justify-between"><span>Key Role:</span> <span class="text-cyan-400">MEP & Milestone Management</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 overflow-hidden reveal-on-scroll group">
+          <div class="h-60 overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop" 
+              alt="Heritage Villa Renovation and Interior Restructure" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md px-2.5 py-1 rounded text-[10px] font-mono uppercase text-amber-400 border border-slate-800">
+              Heritage Renovation
+            </div>
+            <div class="absolute bottom-3 right-3 bg-slate-950/90 backdrop-blur-md px-2.5 py-1 rounded text-[11px] font-mono text-slate-200">
+              Bandra, Mumbai
+            </div>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-lg font-bold text-white">Bandra Heritage Bungalow Upgrade</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Structural beam retrofitting, timber roof strengthening, plumbing line overhaul, and high-tolerance bespoke millwork execution.
+            </p>
+            <div class="border-t border-slate-800 pt-3 space-y-1 text-xs font-mono text-slate-300">
+              <div class="flex justify-between"><span>Scope:</span> <span class="text-white">5,200 sq.ft</span></div>
+              <div class="flex justify-between"><span>Key Role:</span> <span class="text-amber-400">Structural & Snag Management</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       15. SECTION — EXPERIENCE & CREDIBILITY
+       ========================================================================= -->
+  <section class="py-20 lg:py-28 bg-brand-surface/40 relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Credibility Narrative (Col 1-7) -->
+        <div class="lg:col-span-7 space-y-6 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50">
+            <i data-lucide="shield" class="w-3.5 h-3.5"></i>
+            <span>FOUNDATIONAL FOUNDATION</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            Experience Behind the Management.
+          </h2>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+            BuildIQ's approach is informed by practical experience in construction and interior execution. We know what actually happens on a job site because our management methodologies are built on real-world field experience.
+          </p>
+
+          <!-- Verified Corporate Evolution Milestones -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+            
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <span class="text-2xl font-extrabold text-blue-400 font-mono">1970</span>
+              <h4 class="text-xs font-bold text-white uppercase mt-1">Construction Roots</h4>
+              <p class="text-[11px] text-slate-400 mt-1">Foundational heritage in civil building and contracting practices.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <span class="text-2xl font-extrabold text-cyan-400 font-mono">2012</span>
+              <h4 class="text-xs font-bold text-white uppercase mt-1">ArcTech Interior</h4>
+              <p class="text-[11px] text-slate-400 mt-1">Established specialized interior execution and turnkey coordination.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <span class="text-2xl font-extrabold text-white font-mono">2019</span>
+              <h4 class="text-xs font-bold text-white uppercase mt-1">LLP Incorporation</h4>
+              <p class="text-[11px] text-slate-400 mt-1">Corporate formalization into structured project management systems.</p>
+            </div>
+
+          </div>
+
+          <p class="text-xs text-slate-400 italic">
+            This background gives BuildIQ the technical depth to evaluate contractor claims objectively and maintain strict quality standards on site.
+          </p>
+
+        </div>
+
+        <!-- Right: Execution Mindset Differentiator Card (Col 8-12) -->
+        <div class="lg:col-span-5 reveal-on-scroll">
+          <div class="p-8 rounded-2xl glass-panel technical-border bg-gradient-to-br from-blue-950/80 via-slate-900 to-slate-950 border-2 border-blue-500/50 shadow-2xl relative">
+            <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center text-white mb-6">
+              <i data-lucide="hammer" class="w-6 h-6"></i>
+            </div>
+            <div class="text-xs font-mono uppercase text-blue-400 tracking-wider mb-2">OUR CORE DIFFERENTIATOR</div>
+            <h3 class="text-2xl font-extrabold text-white tracking-tight leading-snug mb-4">
+              Project Management With an Execution Mindset.
+            </h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              A project manager needs more than schedules and spreadsheets. Understanding what happens on site helps BuildIQ approach coordination, quality, and execution with a practical perspective.
+            </p>
+            <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800/80 text-xs font-mono text-slate-300 flex items-center gap-2.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 flex-shrink-0"></i>
+              <span>No theoretical fluff. Practical field-tested governance.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       16. SECTION — WHY BUILDIQ PROJECTS? (6 POINTS)
+       ========================================================================= -->
+  <section id="why-buildiq" class="py-20 lg:py-28 bg-brand-dark relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50 mb-3">
+          <i data-lucide="award" class="w-3.5 h-3.5"></i>
+          <span>WHY PARTNER WITH US</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          Why BuildIQ Projects?
+        </h2>
+        <p class="text-base sm:text-lg text-slate-300 mt-4">
+          Six foundational principles that define our client-first project management methodology.
+        </p>
+      </div>
+
+      <!-- 6 Points Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- 1. CLIENT-FIRST -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-lg bg-blue-950 flex items-center justify-center text-blue-400 mb-4">
+            <i data-lucide="user-check" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">CLIENT-FIRST</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Designed entirely around the client's project objectives, schedule requirements, and quality standards — with zero commercial conflicts of interest.
+          </p>
+        </div>
+
+        <!-- 2. STRUCTURED -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-lg bg-blue-950 flex items-center justify-center text-blue-400 mb-4">
+            <i data-lucide="layers" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">STRUCTURED</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            A defined, systematic process for project planning, milestone gating, quality checklists, and stage-by-stage closeouts.
+          </p>
+        </div>
+
+        <!-- 3. COORDINATED -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-lg bg-blue-950 flex items-center justify-center text-blue-400 mb-4">
+            <i data-lucide="git-merge" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">COORDINATED</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            One cohesive management layer connecting designers, structural engineers, MEP consultants, contractors, and material vendors.
+          </p>
+        </div>
+
+        <!-- 4. PRACTICAL -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-lg bg-blue-950 flex items-center justify-center text-blue-400 mb-4">
+            <i data-lucide="wrench" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">PRACTICAL</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Grounded in real execution understanding, field tolerances, and construction realities — not just spreadsheets and theory.
+          </p>
+        </div>
+
+        <!-- 5. TRANSPARENT -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-lg bg-blue-950 flex items-center justify-center text-blue-400 mb-4">
+            <i data-lucide="eye" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">TRANSPARENT</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Clear, honest communication around site progress, open snag issues, material verification, and pending client decisions.
+          </p>
+        </div>
+
+        <!-- 6. ACCOUNTABLE -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/80 border border-slate-800 reveal-on-scroll">
+          <div class="w-10 h-10 rounded-lg bg-blue-950 flex items-center justify-center text-blue-400 mb-4">
+            <i data-lucide="check-square" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">ACCOUNTABLE</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Focused on relentless follow-through, resolving contractor roadblocks, and achieving a snag-free project handover.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       17. FINAL CONVERSION & LEAD CAPTURE FORM SECTION
+       ========================================================================= -->
+  <section id="consultation" class="py-20 lg:py-28 bg-brand-surface/90 relative border-t border-slate-800 overflow-hidden">
+    <!-- Ambient Blur -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-blue-600/10 blur-[140px] rounded-full pointer-events-none -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left Conversion Messaging (Col 1-5) -->
+        <div class="lg:col-span-5 space-y-6 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50">
+            <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+            <span>PMC CONSULTATION</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            Have a Project to Manage?
+          </h2>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+            Tell us about your project, its current stage, and what you need help managing. Our team will review your requirements and outline a tailored PMC coordination framework.
+          </p>
+
+          <!-- Value Bullets -->
+          <div class="space-y-3 pt-2">
+            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-3">
+              <i data-lucide="check" class="w-5 h-5 text-emerald-400"></i>
+              <span class="text-xs sm:text-sm text-slate-200">Independent client-side PMC representation</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-3">
+              <i data-lucide="check" class="w-5 h-5 text-emerald-400"></i>
+              <span class="text-xs sm:text-sm text-slate-200">Structured milestone schedule & quality audit plan</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-3">
+              <i data-lucide="check" class="w-5 h-5 text-emerald-400"></i>
+              <span class="text-xs sm:text-sm text-slate-200">Confidential document & drawing review</span>
+            </div>
+          </div>
+
+          <!-- Fast-Track WhatsApp CTA Box -->
+          <div class="p-5 rounded-2xl bg-gradient-to-br from-emerald-950/80 to-slate-900 border border-emerald-800/60 text-white space-y-3">
+            <div class="flex items-center gap-2.5 text-emerald-400 font-mono text-xs uppercase font-bold">
+              <i data-lucide="zap" class="w-4 h-4"></i> Fast-Track Inquiry
+            </div>
+            <h4 class="text-base font-bold">Prefer Direct Discussion on WhatsApp?</h4>
+            <p class="text-xs text-slate-300">
+              Connect directly with our project advisory team to share drawings or discuss your site location.
+            </p>
+            <a href="#" class="whatsapp-trigger-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs uppercase tracking-wider font-mono transition-colors">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Chat With BuildIQ</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Comprehensive Lead Form (Col 6-12) -->
+        <div class="lg:col-span-7 reveal-on-scroll">
+          
+          <div class="p-6 sm:p-10 rounded-2xl glass-panel technical-border bg-slate-900/90 border border-slate-700/80 shadow-2xl relative">
+            
+            <div class="mb-6">
+              <h3 class="text-2xl font-extrabold text-white">Let's Talk About Your Project.</h3>
+              <p class="text-xs text-slate-400 mt-1">Please fill in your project details below to request a PMC consultation.</p>
+            </div>
+
+            <!-- Form Success Toast Notification (Hidden by default) -->
+            <div id="form-success-toast" class="hidden mb-6 p-4 rounded-xl bg-emerald-950 border border-emerald-700 text-emerald-200 text-xs sm:text-sm flex items-start gap-3">
+              <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="font-bold block text-white">Consultation Request Received</strong>
+                Thank you. We have logged your project brief and will connect with you promptly to schedule an initial coordination review.
+              </div>
+            </div>
+
+            <form id="consultation-lead-form" class="space-y-4">
+              
+              <!-- Row 1: Name & Organization -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5 font-semibold">Full Name *</label>
+                  <input type="text" id="lead-name" required placeholder="e.g. Rahul Sharma" class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 placeholder-slate-600 text-white">
+                </div>
+                <div>
+                  <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5 font-semibold">Company / Organization</label>
+                  <input type="text" id="lead-company" placeholder="e.g. Acme Developers or Property Owner" class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 placeholder-slate-600 text-white">
+                </div>
+              </div>
+
+              <!-- Row 2: Phone & Email -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5 font-semibold">Phone Number *</label>
+                  <input type="tel" id="lead-phone" required placeholder="+91 98XXX XXXXX" class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 placeholder-slate-600 text-white">
+                </div>
+                <div>
+                  <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5 font-semibold">Email Address *</label>
+                  <input type="email" id="lead-email" required placeholder="name@domain.com" class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 placeholder-slate-600 text-white">
+                </div>
+              </div>
+
+              <!-- Row 3: Location & Project Type -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5 font-semibold">Project Location *</label>
+                  <input type="text" id="lead-location" required placeholder="e.g. South Mumbai / Bandra / Navi Mumbai" class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 placeholder-slate-600 text-white">
+                </div>
+                <div>
+                  <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5 font-semibold">Project Type *</label>
+                  <select id="lead-type" class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 text-white">
+                    <option value="Residential">Residential</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Interior">Interior</option>
+                    <option value="Renovation">Renovation</option>
+                    <option value="Construction">Construction</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Row 4: Project Stage -->
+              <div>
+                <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5 font-semibold">Project Stage *</label>
+                <select id="lead-stage" class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 text-white">
+                  <option value="Planning">Planning / Ideation</option>
+                  <option value="Design">Design & Drawings Underway</option>
+                  <option value="Tendering">Tendering / Contractor Selection</option>
+                  <option value="Under Construction">Under Construction (Active Site)</option>
+                  <option value="Renovation">Renovation / Upgrades</option>
+                  <option value="Near Completion">Near Completion (Snagging Needed)</option>
+                </select>
+              </div>
+
+              <!-- Row 5: What do you need help with? (Checkboxes) -->
+              <div>
+                <label class="block text-xs font-mono uppercase text-slate-300 mb-2 font-semibold">What do you need help with? (Select all that apply)</label>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+                  <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-950/70 border border-slate-800 hover:border-slate-700 cursor-pointer text-slate-300">
+                    <input type="checkbox" name="help_topics" value="Project Planning" class="accent-blue-500 rounded">
+                    <span>Project Planning</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-950/70 border border-slate-800 hover:border-slate-700 cursor-pointer text-slate-300">
+                    <input type="checkbox" name="help_topics" value="Contractor Coordination" class="accent-blue-500 rounded" checked>
+                    <span>Contractor Sync</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-950/70 border border-slate-800 hover:border-slate-700 cursor-pointer text-slate-300">
+                    <input type="checkbox" name="help_topics" value="Site Management" class="accent-blue-500 rounded" checked>
+                    <span>Site Management</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-950/70 border border-slate-800 hover:border-slate-700 cursor-pointer text-slate-300">
+                    <input type="checkbox" name="help_topics" value="Quality Monitoring" class="accent-blue-500 rounded" checked>
+                    <span>Quality Monitoring</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-950/70 border border-slate-800 hover:border-slate-700 cursor-pointer text-slate-300">
+                    <input type="checkbox" name="help_topics" value="Cost Management" class="accent-blue-500 rounded">
+                    <span>Cost Tracking</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-950/70 border border-slate-800 hover:border-slate-700 cursor-pointer text-slate-300">
+                    <input type="checkbox" name="help_topics" value="Schedule Management" class="accent-blue-500 rounded">
+                    <span>Schedule Control</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-950/70 border border-slate-800 hover:border-slate-700 cursor-pointer text-slate-300">
+                    <input type="checkbox" name="help_topics" value="Complete PMC" class="accent-blue-500 rounded" checked>
+                    <span>Complete PMC</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-950/70 border border-slate-800 hover:border-slate-700 cursor-pointer text-slate-300">
+                    <input type="checkbox" name="help_topics" value="Other" class="accent-blue-500 rounded">
+                    <span>Other Services</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Row 6: Project Description -->
+              <div>
+                <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5 font-semibold">Project Description</label>
+                <textarea id="lead-desc" rows="3" placeholder="Briefly describe your site scope, approx area, key timelines, and any current pain points..." class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 placeholder-slate-600 text-white"></textarea>
+              </div>
+
+              <!-- Row 7: File / Drawing Upload Zone -->
+              <div>
+                <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5 font-semibold">Upload Drawings / Documents (Optional)</label>
+                <label for="drawing-upload" class="flex flex-col items-center justify-center p-4 rounded-xl border-2 border-dashed border-slate-800 hover:border-blue-500/60 bg-slate-950/50 cursor-pointer transition-colors text-center">
+                  <i data-lucide="upload-cloud" class="w-6 h-6 text-slate-500 mb-1"></i>
+                  <span id="upload-status-text" class="text-xs text-slate-400">Upload Architectural Drawings / Project Documents (PDF, DWG, ZIP up to 50MB)</span>
+                  <input type="file" id="drawing-upload" class="hidden" multiple accept=".pdf,.dwg,.zip,.rar,.doc,.docx,.png,.jpg">
+                </label>
+              </div>
+
+              <!-- Submit CTA -->
+              <div class="pt-2">
+                <button type="submit" class="w-full py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm uppercase tracking-wider font-mono shadow-xl shadow-blue-600/30 transition-all hover:shadow-blue-600/50 flex items-center justify-center gap-2 border border-blue-400/40">
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  <span>Request a Consultation</span>
+                </button>
+                <p class="text-center text-[11px] text-slate-400 mt-2 font-mono">
+                  Strict Confidentiality Assured • We respect your project privacy.
+                </p>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       18. SECTION — CONTACT & LOCATION MATRIX
+       ========================================================================= -->
+  <section class="py-20 bg-slate-950 relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-blue-400 bg-blue-950/60 px-3 py-1 rounded border border-blue-800/50 mb-3">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+          <span>GET IN TOUCH</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Let's Start With a Conversation.
+        </h2>
+        <p class="text-base text-slate-300 mt-3">
+          Connect with BuildIQ Projects across our verified communication channels.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 reveal-on-scroll">
+        
+        <!-- Call -->
+        <a href="tel:+919820000000" class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/70 border border-slate-800 hover:border-blue-500/50 transition-all block group">
+          <div class="w-10 h-10 rounded-lg bg-blue-950 flex items-center justify-center text-blue-400 mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-mono uppercase text-slate-400 block">DIRECT CALL</span>
+          <span class="text-base font-bold text-white mt-1 block">Speak to PMC Lead</span>
+          <span class="text-xs text-blue-400 font-mono mt-2 block flex items-center gap-1">
+            Tap to Call <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="#" class="whatsapp-trigger-btn p-6 rounded-2xl glass-panel technical-border bg-slate-900/70 border border-slate-800 hover:border-emerald-500/50 transition-all block group">
+          <div class="w-10 h-10 rounded-lg bg-emerald-950 flex items-center justify-center text-emerald-400 mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-mono uppercase text-slate-400 block">WHATSAPP</span>
+          <span class="text-base font-bold text-white mt-1 block">Chat With BuildIQ</span>
+          <span class="text-xs text-emerald-400 font-mono mt-2 block flex items-center gap-1">
+            Discuss on WhatsApp <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:info@buildiqprojects.com" class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/70 border border-slate-800 hover:border-cyan-500/50 transition-all block group">
+          <div class="w-10 h-10 rounded-lg bg-cyan-950 flex items-center justify-center text-cyan-400 mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-mono uppercase text-slate-400 block">EMAIL INQUIRY</span>
+          <span class="text-base font-bold text-white mt-1 block">Project Briefs & RFPs</span>
+          <span class="text-xs text-cyan-400 font-mono mt-2 block flex items-center gap-1">
+            Send Email <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </a>
+
+        <!-- Location -->
+        <div class="p-6 rounded-2xl glass-panel technical-border bg-slate-900/70 border border-slate-800 block">
+          <div class="w-10 h-10 rounded-lg bg-blue-950 flex items-center justify-center text-blue-400 mb-3">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-mono uppercase text-slate-400 block">LOCATION</span>
+          <span class="text-base font-bold text-white mt-1 block">Mumbai • India</span>
+          <span class="text-xs text-slate-400 font-mono mt-2 block">
+            Serving Mumbai Metropolitan Region (MMR)
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       19. FOOTER
+       ========================================================================= -->
+  <footer class="bg-brand-dark border-t border-slate-800/80 pt-16 pb-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-slate-800">
+        
+        <!-- Brand Summary (Col 1-5) -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold">
+              <i data-lucide="layers" class="w-4 h-4"></i>
+            </div>
+            <span class="text-lg font-extrabold tracking-tight text-white">BUILDIQ PROJECTS</span>
+          </div>
+          <div class="text-[11px] font-mono text-blue-400 uppercase tracking-wider">
+            PROJECT MANAGEMENT CONSULTANCY (PMC)
+          </div>
+          <p class="text-slate-400 max-w-sm leading-relaxed">
+            BuildIQ Projects manages, coordinates, and monitors construction, interior, and renovation projects on behalf of clients. Intelligent project management. Seamless execution.
+          </p>
+          <div class="text-[11px] text-slate-400 font-mono">
+            Location: Mumbai, Maharashtra, India
+          </div>
+        </div>
+
+        <!-- Quick Links (Col 6-8) -->
+        <div class="md:col-span-3 space-y-3">
+          <h5 class="text-xs font-bold text-white uppercase tracking-wider font-mono">PMC NAVIGATION</h5>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-blue-400 transition-colors">Home</a></li>
+            <li><a href="#services" class="hover:text-blue-400 transition-colors">PMC Services</a></li>
+            <li><a href="#method" class="hover:text-blue-400 transition-colors">The BuildIQ Method</a></li>
+            <li><a href="#pillars" class="hover:text-blue-400 transition-colors">Four Pillars of Control</a></li>
+            <li><a href="#control-dashboard" class="hover:text-blue-400 transition-colors">Project Control Dashboard</a></li>
+            <li><a href="#experience" class="hover:text-blue-400 transition-colors">Relevant Experience</a></li>
+            <li><a href="#why-buildiq" class="hover:text-blue-400 transition-colors">Why BuildIQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Conversion & Advisory (Col 9-12) -->
+        <div class="md:col-span-4 space-y-4">
+          <h5 class="text-xs font-bold text-white uppercase tracking-wider font-mono">CONSULTATION</h5>
+          <p class="text-slate-400 leading-relaxed">
+            Ready to establish a structured project management layer for your upcoming or active site?
+          </p>
+          <a href="#consultation" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs uppercase font-mono tracking-wider transition-colors">
+            <span>Discuss Your Project</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Disclaimer -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 font-mono">
+        <div>
+          © <span id="year-display">2026</span> BuildIQ Projects. All Rights Reserved. Project Management Consultancy.
+        </div>
+        <div class="flex items-center gap-4">
+          <span>Mumbai • India</span>
+          <span>•</span>
+          <a href="#consultation" class="text-slate-400 hover:text-white">Privacy & Terms</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- =========================================================================
+       20. STICKY MOBILE BOTTOM BAR (WhatsApp | Call | Enquire)
+       ========================================================================= -->
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 mobile-sticky-bar py-2 px-3">
+    <div class="grid grid-cols-3 gap-2 text-center text-xs font-mono">
+      
+      <!-- WhatsApp -->
+      <a href="#" class="whatsapp-trigger-btn flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-emerald-600 text-white font-semibold shadow-sm">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>WhatsApp</span>
+      </a>
+
+      <!-- Call -->
+      <a href="tel:+919820000000" class="flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-slate-800 text-white font-semibold border border-slate-700">
+        <i data-lucide="phone" class="w-4 h-4 text-blue-400"></i>
+        <span>Call</span>
+      </a>
+
+      <!-- Enquire -->
+      <a href="#consultation" class="flex items-center justify-center gap-1.5 py-2.5 rounded-lg bg-blue-600 text-white font-semibold shadow-sm">
+        <i data-lucide="send" class="w-4 h-4"></i>
+        <span>Enquire</span>
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       21. SAMPLE WEEKLY PMC REPORT MODAL
+       ========================================================================= -->
+  <div id="sample-report-modal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="relative w-full max-w-3xl rounded-2xl glass-panel technical-border bg-slate-900 border border-slate-700 shadow-2xl p-6 sm:p-8 space-y-6 max-h-[90vh] overflow-y-auto">
+      
+      <!-- Modal Header -->
+      <div class="flex items-start justify-between border-b border-slate-800 pb-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center text-white">
+            <i data-lucide="file-check-2" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <span class="text-[10px] font-mono text-blue-400 uppercase tracking-wider block">EXECUTIVE PMC DELIVERABLE</span>
+            <h3 class="text-xl font-bold text-white">Sample Weekly PMC Executive Report</h3>
+          </div>
+        </div>
+        <button id="close-report-modal" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Sample Report Body Content -->
+      <div class="space-y-4 text-xs font-mono">
+        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+          <div class="flex justify-between text-slate-400 border-b border-slate-800/80 pb-2">
+            <span>Project: Sea-Facing Luxury Duplex (Illustrative)</span>
+            <span>Week: 18 of 26</span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1 text-slate-200">
+            <div>Progress: <strong class="text-emerald-400">76% On-Track</strong></div>
+            <div>Critical Path: <strong class="text-blue-400">Clear</strong></div>
+            <div>Open Snags: <strong class="text-amber-400">12 Active</strong></div>
+            <div>Decisions Req: <strong class="text-cyan-400">4 Items</strong></div>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 space-y-2">
+          <h4 class="text-slate-300 font-bold uppercase">1. Key Progress This Week</h4>
+          <ul class="text-slate-400 space-y-1 pl-3 list-disc">
+            <li>Completed 100% false ceiling framework across Living & Dining zones.</li>
+            <li>Conducted MEP pressure testing (10 bar sustained for 4 hours — Passed).</li>
+            <li>Approved 3 custom veneer mockups with the interior design consultant.</li>
+          </ul>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 space-y-2">
+          <h4 class="text-slate-300 font-bold uppercase">2. Actionable Pending Client Decisions</h4>
+          <ul class="text-slate-400 space-y-1 pl-3 list-disc">
+            <li>Approval of Master Bathroom marble slab layout dry-run (Photos attached in annexure).</li>
+            <li>Final selection of architectural hardware finish (Brushed Nickel vs Matt Black).</li>
+          </ul>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800 space-y-2">
+          <h4 class="text-slate-300 font-bold uppercase">3. Next Week Milestone Targets</h4>
+          <ul class="text-slate-400 space-y-1 pl-3 list-disc">
+            <li>Commencing wood flooring substrate leveling and moisture barrier verification.</li>
+            <li>Sliding window shutter fitment and water-tightness nozzle spray test.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-800 pt-4 flex items-center justify-between">
+        <span class="text-[11px] font-mono text-slate-400">Standard weekly delivery to project owners & developers.</span>
+        <a href="#consultation" class="px-5 py-2 rounded-lg bg-blue-600 text-white font-semibold text-xs font-mono uppercase">
+          Request PMC Consultation
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Custom Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
