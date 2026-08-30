@@ -31,11 +31,10 @@ We act as the client-side management layer between project goals and the contrac
    - **Four Pillars of Control**: Time, Cost, Quality, Coordination.
    - **Conceptual Project Control Dashboard**: Interactive tabs demonstrating Milestone Tracking, Daily Site Logs, Snag Resolution, and Quality Checklist.
    - **Site Visibility & Reporting Matrix**: Authentic inspection checks and structured weekly reporting categories.
-   - **Interactive Project Scope Planner**: Dynamic tool for owners and developers to configure project area, type, and phase.
    - **Relevant Experience Portfolio**: High-end residential duplexes, BKC corporate fit-outs, and heritage renovations.
    - **Experience Behind the Management**: Practical construction heritage (1970 roots, 2012 ArcTech, 2019 LLP).
-   - **Comprehensive Lead Capture**: Validated multi-step inquiry form with project stage picker, scope checkboxes, and file upload zone.
-   - **Mobile Sticky Action Bar**: Instant access to WhatsApp, direct call, and consultation modal.
+   - **Comprehensive Lead Capture**: Validated inquiry form with Mumbai micro-market picker, scope checkboxes, and file upload zone.
+   - **Mobile Sticky Action Bar & Floating WhatsApp**: Instant access to WhatsApp, direct call, and consultation modal.
 
 ---
 
@@ -43,7 +42,7 @@ We act as the client-side management layer between project goals and the contrac
 
 - **HTML5**: Semantic markup, Open Graph metadata, and Schema.org JSON-LD structured data.
 - **CSS3 / Tailwind CSS**: Custom design system, technical grid textures, and responsive layout.
-- **Vanilla JavaScript**: Lightweight interactive dashboard tabs, scope calculator, modal manager, and mobile drawer.
+- **Vanilla JavaScript**: Lightweight interactive dashboard tabs, modal manager, and mobile drawer.
 - **Lucide Icons**: Crisp, modern icon set.
 - **Google Fonts**: Plus Jakarta Sans & Inter typography.
 
