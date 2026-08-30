@@ -1,6 +1,6 @@
 /**
  * BuildIQ Projects — Project Management Consultancy (PMC)
- * Core Application & Interactive Components Script
+ * Mumbai Prestige Edition — Core Application & Interactive Script
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -39,9 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     navLinks.forEach(link => {
-      link.classList.remove('text-blue-400', 'font-semibold');
+      link.classList.remove('text-amber-400', 'font-semibold');
       if (link.getAttribute('href') === `#${currentSectionId}`) {
-        link.classList.add('text-blue-400', 'font-semibold');
+        link.classList.add('text-amber-400', 'font-semibold');
       }
     });
   });
@@ -100,10 +100,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Update tab buttons active state
       dashboardTabs.forEach(t => {
-        t.classList.remove('active', 'bg-blue-600', 'text-white');
+        t.classList.remove('active', 'bg-amber-500', 'text-slate-950', 'font-bold');
         t.classList.add('bg-slate-800/60', 'text-slate-400');
       });
-      tab.classList.add('active', 'bg-blue-600', 'text-white');
+      tab.classList.add('active', 'bg-amber-500', 'text-slate-950', 'font-bold');
       tab.classList.remove('bg-slate-800/60', 'text-slate-400');
 
       // Show targeted panel
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
       scopeSizeDisplay.textContent = Number(pSize).toLocaleString() + ' sq.ft';
     }
 
-    // Dynamic calculations based on industry standard PMC frameworks
+    // Dynamic calculations based on Mumbai MMR industry standard PMC frameworks
     let coordinationLevel = 'Full Multi-Stakeholder Matrix';
     let milestones = '12 Milestones';
     let weeklyHours = '24+ Inspection Hrs';
@@ -151,31 +151,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (pType === 'residential') {
       if (pSize < 3000) {
-        coordinationLevel = 'Focused PMC Oversight';
+        coordinationLevel = 'Focused Luxury Residence PMC';
         milestones = '8 Key Milestones';
-        weeklyHours = '12–16 Dedicated Site Hrs';
-        keyDeliverable = 'Contractor Alignment & Finishes Quality Gate';
+        weeklyHours = '14–18 Dedicated Site Hrs';
+        keyDeliverable = 'Society NOC & High-Rise Finishes Quality Gate';
       } else {
         coordinationLevel = 'Comprehensive Luxury Residential PMC';
         milestones = '14 Key Milestones';
         weeklyHours = '28+ Dedicated Site Hrs';
-        keyDeliverable = 'High-Tolerance Quality Audits & Millwork Inspection';
+        keyDeliverable = 'Italian Marble, Millwork & 72hr Waterproofing Audits';
       }
     } else if (pType === 'commercial') {
       coordinationLevel = 'Corporate Turnkey PMC Matrix';
       milestones = Math.min(22, Math.max(10, Math.floor(pSize / 2500) + 8)) + ' Milestones';
       weeklyHours = '36+ Multi-Trade Oversight Hrs';
-      keyDeliverable = 'HVAC/MEP, IT-Fitout & Base-Build Handover Matrix';
+      keyDeliverable = 'BKC/Lower Parel Grade-A Base Build & MEP Sync';
     } else if (pType === 'interior') {
       coordinationLevel = 'Precision Interior & Joinery PMC';
       milestones = '10 Stage Milestones';
       weeklyHours = '18–24 Dedicated Site Hrs';
       keyDeliverable = 'Material Batch Quality & 0-Snag Closeout Protocol';
     } else if (pType === 'renovation') {
-      coordinationLevel = 'Live Site & Structural Upgrade PMC';
+      coordinationLevel = 'Live High-Rise & Heritage Upgrade PMC';
       milestones = '12 Phased Milestones';
       weeklyHours = '22+ Site Risk & Remediation Hrs';
-      keyDeliverable = 'Demolition Safety, Structural Retrofit & MEP Coordination';
+      keyDeliverable = 'Acoustic Control, Structural Retrofit & MEP Coordination';
     }
 
     if (resCoordinationLevel) resCoordinationLevel.textContent = coordinationLevel;
@@ -236,10 +236,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (uploadInput.files.length > 0) {
         const fileNames = Array.from(uploadInput.files).map(f => f.name).join(', ');
         uploadLabel.textContent = `Attached: ${fileNames}`;
-        uploadLabel.classList.add('text-blue-400');
+        uploadLabel.classList.add('text-amber-400');
       } else {
         uploadLabel.textContent = 'Upload Architectural Drawings / Project Documents (PDF, DWG, ZIP up to 50MB)';
-        uploadLabel.classList.remove('text-blue-400');
+        uploadLabel.classList.remove('text-amber-400');
       }
     });
   }
@@ -252,25 +252,22 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = document.getElementById('lead-name')?.value || '';
       const phone = document.getElementById('lead-phone')?.value || '';
       const email = document.getElementById('lead-email')?.value || '';
+      const pLocation = document.getElementById('lead-location')?.value || 'Mumbai';
       const pType = document.getElementById('lead-type')?.value || 'General';
       const pStage = document.getElementById('lead-stage')?.value || 'Planning';
       const pDesc = document.getElementById('lead-desc')?.value || '';
-
-      // Collect checked help options
-      const helpCheckboxes = document.querySelectorAll('input[name="help_topics"]:checked');
-      const helpTopics = Array.from(helpCheckboxes).map(cb => cb.value).join(', ');
 
       const submitBtn = leadForm.querySelector('button[type="submit"]');
       const originalBtnText = submitBtn.innerHTML;
 
       submitBtn.disabled = true;
       submitBtn.innerHTML = `
-        <span class="inline-flex items-center gap-2">
-          <svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+        <span class="inline-flex items-center gap-2 text-slate-950 font-bold">
+          <svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-slate-950" fill="none" viewBox="0 0 24 24">
             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
           </svg>
-          Structuring Project Brief...
+          Structuring Mumbai Project Brief...
         </span>
       `;
 
@@ -293,10 +290,10 @@ document.addEventListener('DOMContentLoaded', () => {
         leadForm.reset();
         if (uploadLabel) {
           uploadLabel.textContent = 'Upload Architectural Drawings / Project Documents (PDF, DWG, ZIP up to 50MB)';
-          uploadLabel.classList.remove('text-blue-400');
+          uploadLabel.classList.remove('text-amber-400');
         }
 
-        // Scroll smoothly to toast if needed
+        // Scroll smoothly to toast
         formSuccessToast.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }, 900);
     });
@@ -310,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const defaultText = encodeURIComponent(
-        "Hello BuildIQ Projects Team, I am looking for a Project Management Consultancy (PMC) partner for my upcoming construction/interior project in Mumbai. Let's discuss scope and coordination."
+        "Hello BuildIQ Projects Team, I am planning an upcoming construction / interior / renovation project in Mumbai (MMR) and would like to discuss PMC coordination and site oversight."
       );
       // Opens WhatsApp Web or App
       window.open(`https://wa.me/?text=${defaultText}`, '_blank');

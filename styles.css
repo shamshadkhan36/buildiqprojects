@@ -1,29 +1,33 @@
 /* ==========================================================================
    BuildIQ Projects — Premium Project Management Consultancy (PMC)
-   Custom Stylesheet & Design System
+   Mumbai Prestige Edition — Custom Design System & Stylesheet
    ========================================================================== */
 
 :root {
-  --bg-primary: #090D16;
-  --bg-secondary: #0F172A;
-  --bg-tertiary: #1E293B;
-  --bg-card: rgba(15, 23, 42, 0.75);
-  --bg-card-hover: rgba(30, 41, 59, 0.85);
+  /* Mumbai Prestige Palette: Obsidian, Sapphire, Titanium & Architectural Gold */
+  --bg-primary: #060911;
+  --bg-secondary: #0B101E;
+  --bg-tertiary: #121A2F;
+  --bg-card: rgba(11, 16, 30, 0.82);
+  --bg-card-hover: rgba(18, 26, 47, 0.92);
   
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-focus: rgba(59, 130, 246, 0.5);
-  --border-light: #E2E8F0;
+  --border-subtle: rgba(255, 255, 255, 0.09);
+  --border-gold: rgba(234, 179, 8, 0.35);
+  --border-blue: rgba(59, 130, 246, 0.4);
+  --border-focus: rgba(59, 130, 246, 0.6);
   
   --text-primary: #FFFFFF;
   --text-secondary: #94A3B8;
   --text-muted: #64748B;
-  --text-dark: #0F172A;
+  --text-gold: #FACC15;
   
   --accent-blue: #2563EB;
   --accent-blue-light: #3B82F6;
-  --accent-blue-glow: rgba(37, 99, 235, 0.25);
+  --accent-blue-glow: rgba(37, 99, 235, 0.3);
+  --accent-gold: #EAB308;
+  --accent-gold-light: #FDE047;
+  --accent-gold-glow: rgba(234, 179, 8, 0.25);
   --accent-cyan: #0EA5E9;
-  --accent-amber: #F59E0B;
   --accent-emerald: #10B981;
   --accent-rose: #F43F5E;
   
@@ -32,12 +36,14 @@
   --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
   
   --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
   
-  --shadow-subtle: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 35px -5px rgba(37, 99, 235, 0.3);
+  --shadow-subtle: 0 4px 25px -2px rgba(0, 0, 0, 0.6);
+  --shadow-prestige: 0 10px 40px -10px rgba(0, 0, 0, 0.8), 0 0 20px -2px rgba(37, 99, 235, 0.15);
+  --shadow-gold-glow: 0 0 30px -5px rgba(234, 179, 8, 0.25);
+  
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -88,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 24px 24px;
 }
 
+/* Technical Hairline Borders with Corner Accents */
 .technical-border {
   border: 1px solid var(--border-subtle);
   position: relative;
@@ -98,36 +105,31 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: -1px;
   right: -1px;
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid var(--accent-gold);
+  border-right: 2px solid var(--accent-gold);
+}
+
+.technical-border-blue::after {
   border-top: 2px solid var(--accent-blue-light);
   border-right: 2px solid var(--accent-blue-light);
 }
 
-/* Glowing Accents */
-.glow-effect {
-  position: relative;
-}
-.glow-effect::before {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  background: linear-gradient(90deg, #2563EB, #0EA5E9, #2563EB);
-  border-radius: inherit;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity var(--transition-smooth);
-}
-.glow-effect:hover::before {
-  opacity: 0.7;
-}
-
 /* Glassmorphism Cards */
 .glass-panel {
-  background: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-gold {
+  background: rgba(18, 22, 36, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(234, 179, 8, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(234, 179, 8, 0.15);
 }
 
 .glass-panel-light {
@@ -145,21 +147,22 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: #334155;
+  background: #25334c;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: #3b4f73;
 }
 
 /* Navigation Shrink State */
 header.scrolled {
-  background: rgba(9, 13, 22, 0.92);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(6, 9, 17, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
 }
 
 /* Process Timeline Connectors (Desktop & Mobile) */
@@ -174,8 +177,8 @@ header.scrolled {
     left: 40px;
     right: 40px;
     height: 2px;
-    background: linear-gradient(90deg, #2563EB 0%, #0EA5E9 50%, #3B82F6 100%);
-    opacity: 0.3;
+    background: linear-gradient(90deg, #EAB308 0%, #3B82F6 50%, #10B981 100%);
+    opacity: 0.35;
     z-index: 1;
   }
 }
@@ -188,18 +191,18 @@ header.scrolled {
     bottom: 20px;
     left: 27px;
     width: 2px;
-    background: linear-gradient(180deg, #2563EB 0%, #0EA5E9 50%, #3B82F6 100%);
-    opacity: 0.3;
+    background: linear-gradient(180deg, #EAB308 0%, #3B82F6 50%, #10B981 100%);
+    opacity: 0.35;
     z-index: 1;
   }
 }
 
 /* Custom Interactive Tabs */
 .tab-btn.active {
-  background-color: #2563EB;
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
   color: #FFFFFF;
   border-color: #3B82F6;
-  box-shadow: 0 0 20px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.4);
 }
 
 .tab-btn:not(.active) {
@@ -212,46 +215,34 @@ header.scrolled {
   color: #FFFFFF;
 }
 
-/* Pulsing Status Dot */
-.pulse-dot {
-  position: relative;
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+/* Location Tag Chips */
+.mumbai-chip {
+  transition: all var(--transition-fast);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(15, 23, 42, 0.6);
 }
-.pulse-dot::before {
-  content: '';
-  position: absolute;
-  inset: -3px;
-  border-radius: 50%;
-  background: inherit;
-  opacity: 0.6;
-  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+.mumbai-chip:hover {
+  border-color: #EAB308;
+  background: rgba(234, 179, 8, 0.12);
+  color: #FDE047;
+  transform: translateY(-2px);
 }
 
-@keyframes pulse-ring {
-  0% {
-    transform: scale(0.9);
-    opacity: 0.8;
-  }
-  70% {
-    transform: scale(2.2);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(2.4);
-    opacity: 0;
-  }
+/* Gold Gradient Accents */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FDE047 0%, #EAB308 50%, #CA8A04 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* Custom Animations */
-@keyframes floatSlow {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-6px); }
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #EAB308 0%, #CA8A04 100%);
 }
-.animate-float {
-  animation: floatSlow 5s ease-in-out infinite;
+
+.gold-badge {
+  background: rgba(234, 179, 8, 0.12);
+  border: 1px solid rgba(234, 179, 8, 0.35);
+  color: #FACC15;
 }
 
 /* Reveal on Scroll */
@@ -266,68 +257,24 @@ header.scrolled {
   transform: translateY(0);
 }
 
-/* Technical Metric Card */
-.metric-box {
-  border-left: 2px solid var(--accent-blue);
-  background: linear-gradient(90deg, rgba(37, 99, 235, 0.08) 0%, transparent 100%);
-}
-
-/* Scope Badge Styles */
-.scope-tag {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 3px 8px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #CBD5E1;
-}
-
 /* Form Styling */
 .form-input {
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(9, 14, 26, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: #FFFFFF;
   transition: all var(--transition-fast);
 }
 .form-input:focus {
   outline: none;
-  border-color: #3B82F6;
-  background: rgba(15, 23, 42, 0.9);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
-}
-
-.custom-checkbox:checked + label {
-  border-color: #3B82F6;
-  background: rgba(37, 99, 235, 0.15);
-  color: #FFFFFF;
-}
-
-/* Modal Styling */
-.modal-backdrop {
-  background-color: rgba(4, 7, 13, 0.85);
-  backdrop-filter: blur(8px);
+  border-color: #EAB308;
+  background: rgba(9, 14, 26, 0.95);
+  box-shadow: 0 0 0 3px rgba(234, 179, 8, 0.2);
 }
 
 /* Sticky Mobile Bottom Bar */
 .mobile-sticky-bar {
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.6);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(9, 13, 22, 0.95);
-  backdrop-filter: blur(12px);
-}
-
-/* Gantt Conceptual Progress Bar */
-.gantt-bar {
-  height: 8px;
-  border-radius: 4px;
-  position: relative;
-  overflow: hidden;
-}
-.gantt-bar-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #2563EB, #0EA5E9);
-  border-radius: 4px;
+  box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(6, 9, 17, 0.96);
+  backdrop-filter: blur(16px);
 }
