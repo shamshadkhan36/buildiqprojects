@@ -1,16 +1,16 @@
 /**
- * BuildIQ Projects — Project Management Consultancy (PMC)
- * Mumbai Prestige Edition — Core Application & Interactive Script
+ * BuildIQ Projects — Project Management Consultancy | Architecture | Turnkey Construction
+ * Core Application & Interactive Script
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize Lucide Icons
+  // 1. Initialize Lucide Icons
   if (window.lucide) {
     window.lucide.createIcons();
   }
 
   // -------------------------------------------------------------
-  // 1. Navigation & Scroll Behavior
+  // 2. Navigation & Sticky Scroll Behavior
   // -------------------------------------------------------------
   const header = document.getElementById('main-header');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 40) {
-      header.classList.add('scrolled');
+      header?.classList.add('scrolled');
     } else {
-      header.classList.remove('scrolled');
+      header?.classList.remove('scrolled');
     }
 
     // Active link highlighting based on scroll position
     let currentSectionId = '';
-    const scrollPosition = window.scrollY + 200;
+    const scrollPosition = window.scrollY + 250;
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
@@ -46,31 +46,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Mobile Drawer Toggle
+  // Mobile Menu Drawer Controls
   if (mobileMenuBtn && mobileMenuDrawer) {
     mobileMenuBtn.addEventListener('click', () => {
       mobileMenuDrawer.classList.remove('hidden');
+      mobileMenuDrawer.classList.add('flex');
       document.body.style.overflow = 'hidden';
     });
 
+    const closeMobileMenu = () => {
+      mobileMenuDrawer.classList.add('hidden');
+      mobileMenuDrawer.classList.remove('flex');
+      document.body.style.overflow = '';
+    };
+
     if (closeMobileMenuBtn) {
-      closeMobileMenuBtn.addEventListener('click', () => {
-        mobileMenuDrawer.classList.add('hidden');
-        document.body.style.overflow = '';
-      });
+      closeMobileMenuBtn.addEventListener('click', closeMobileMenu);
     }
 
-    // Close mobile menu on clicking any drawer link
+    // Close mobile menu on clicking any link inside the drawer
     document.querySelectorAll('#mobile-menu-drawer a').forEach(item => {
-      item.addEventListener('click', () => {
-        mobileMenuDrawer.classList.add('hidden');
-        document.body.style.overflow = '';
-      });
+      item.addEventListener('click', closeMobileMenu);
     });
   }
 
   // -------------------------------------------------------------
-  // 2. Scroll Reveal Animations (Intersection Observer)
+  // 3. Scroll Reveal Animations (Intersection Observer)
   // -------------------------------------------------------------
   const revealElements = document.querySelectorAll('.reveal-on-scroll');
   const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -82,14 +83,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, {
     root: null,
-    threshold: 0.12,
+    threshold: 0.1,
     rootMargin: '0px 0px -40px 0px'
   });
 
   revealElements.forEach(el => revealObserver.observe(el));
 
   // -------------------------------------------------------------
-  // 3. Conceptual PMC Dashboard Tabs
+  // 4. Interactive Engineering Dashboard Tabs
   // -------------------------------------------------------------
   const dashboardTabs = document.querySelectorAll('.dashboard-tab-btn');
   const dashboardPanels = document.querySelectorAll('.dashboard-tab-panel');
@@ -98,32 +99,153 @@ document.addEventListener('DOMContentLoaded', () => {
     tab.addEventListener('click', () => {
       const targetPanelId = tab.getAttribute('data-tab');
 
-      // Update tab buttons active state
+      // Update tab button styles
       dashboardTabs.forEach(t => {
         t.classList.remove('active', 'bg-amber-500', 'text-slate-950', 'font-bold');
-        t.classList.add('bg-slate-800/60', 'text-slate-400');
+        t.classList.add('bg-slate-800/60', 'text-slate-400', 'font-medium');
       });
       tab.classList.add('active', 'bg-amber-500', 'text-slate-950', 'font-bold');
-      tab.classList.remove('bg-slate-800/60', 'text-slate-400');
+      tab.classList.remove('bg-slate-800/60', 'text-slate-400', 'font-medium');
 
       // Show targeted panel
       dashboardPanels.forEach(panel => {
         if (panel.id === targetPanelId) {
           panel.classList.remove('hidden');
-          panel.classList.add('animate-fadeIn');
         } else {
           panel.classList.add('hidden');
-          panel.classList.remove('animate-fadeIn');
         }
       });
+      
+      if (window.lucide) window.lucide.createIcons();
     });
   });
 
   // -------------------------------------------------------------
-  // 4. Sample Weekly Report Modal System
+  // 5. Portfolio Category Filter Tabs
+  // -------------------------------------------------------------
+  const portfolioFilterBtns = document.querySelectorAll('.portfolio-filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  portfolioFilterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filterValue = btn.getAttribute('data-filter');
+
+      // Update filter buttons active style
+      portfolioFilterBtns.forEach(b => {
+        b.classList.remove('active', 'bg-amber-500', 'text-slate-950', 'font-bold', 'shadow-md', 'shadow-amber-500/20');
+        b.classList.add('bg-slate-900', 'border', 'border-slate-800', 'text-slate-400');
+      });
+      btn.classList.add('active', 'bg-amber-500', 'text-slate-950', 'font-bold', 'shadow-md', 'shadow-amber-500/20');
+      btn.classList.remove('bg-slate-900', 'border', 'border-slate-800', 'text-slate-400');
+
+      // Filter project cards
+      projectCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        if (filterValue === 'all' || cardCategory === filterValue) {
+          card.classList.remove('hidden');
+          card.classList.add('flex');
+        } else {
+          card.classList.add('hidden');
+          card.classList.remove('flex');
+        }
+      });
+
+      if (window.lucide) window.lucide.createIcons();
+    });
+  });
+
+  // -------------------------------------------------------------
+  // 6. Lead Inquiry Form & Consultation Request Handler
+  // -------------------------------------------------------------
+  const leadForm = document.getElementById('consultation-lead-form');
+  const formSuccessToast = document.getElementById('form-success-toast');
+  const uploadInput = document.getElementById('drawing-upload');
+  const uploadLabel = document.getElementById('upload-status-text');
+  const waDirectSubmitBtn = document.getElementById('whatsapp-direct-submit');
+
+  // File upload feedback
+  if (uploadInput && uploadLabel) {
+    uploadInput.addEventListener('change', () => {
+      if (uploadInput.files && uploadInput.files.length > 0) {
+        const fileNames = Array.from(uploadInput.files).map(f => f.name).join(', ');
+        uploadLabel.textContent = `Attached: ${fileNames}`;
+        uploadLabel.classList.add('text-amber-400');
+      } else {
+        uploadLabel.textContent = 'Click to attach drawings or BOQ files';
+        uploadLabel.classList.remove('text-amber-400');
+      }
+    });
+  }
+
+  // Handle Form Submission
+  if (leadForm) {
+    leadForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const submitBtn = leadForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `
+        <span class="inline-flex items-center gap-2 text-slate-950 font-bold">
+          <svg class="animate-spin h-4 w-4 text-slate-950" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+          Submitting Project Scope...
+        </span>
+      `;
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+
+        // Show Toast Notification
+        if (formSuccessToast) {
+          formSuccessToast.classList.remove('hidden');
+          formSuccessToast.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+          setTimeout(() => {
+            formSuccessToast.classList.add('hidden');
+          }, 8000);
+        }
+
+        leadForm.reset();
+        if (uploadLabel) {
+          uploadLabel.textContent = 'Click to attach drawings or BOQ files';
+          uploadLabel.classList.remove('text-amber-400');
+        }
+      }, 700);
+    });
+  }
+
+  // WhatsApp Direct Transfer Button from Form
+  if (waDirectSubmitBtn) {
+    waDirectSubmitBtn.addEventListener('click', () => {
+      const name = document.getElementById('lead-name')?.value || 'Client';
+      const phone = document.getElementById('lead-phone')?.value || 'Not provided';
+      const pLocation = document.getElementById('lead-location')?.value || 'Not specified';
+      const pService = document.getElementById('lead-service')?.value || 'PMC / Turnkey';
+      const pMessage = document.getElementById('lead-message')?.value || 'Project Discussion';
+
+      const waMessage = `*New Project Consultation Inquiry — BuildIQ Projects*\n` +
+        `• *Name:* ${name}\n` +
+        `• *Phone:* ${phone}\n` +
+        `• *Location:* ${pLocation}\n` +
+        `• *Service Required:* ${pService}\n` +
+        `• *Scope Notes:* ${pMessage}\n\n` +
+        `Please connect with me to schedule an initial technical discussion.`;
+
+      window.open(`https://wa.me/919820012345?text=${encodeURIComponent(waMessage)}`, '_blank');
+    });
+  }
+
+  // -------------------------------------------------------------
+  // 7. Sample Weekly Audit Modal System
   // -------------------------------------------------------------
   const openReportModalBtns = document.querySelectorAll('.open-report-modal-btn');
   const closeReportModalBtn = document.getElementById('close-report-modal');
+  const closeModalBottomBtn = document.getElementById('close-modal-bottom');
   const reportModal = document.getElementById('sample-report-modal');
 
   openReportModalBtns.forEach(btn => {
@@ -136,114 +258,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  if (closeReportModalBtn && reportModal) {
-    closeReportModalBtn.addEventListener('click', () => {
+  const closeReportModal = () => {
+    if (reportModal) {
       reportModal.classList.add('hidden');
       document.body.style.overflow = '';
-    });
+    }
+  };
 
+  if (closeReportModalBtn) closeReportModalBtn.addEventListener('click', closeReportModal);
+  if (closeModalBottomBtn) closeModalBottomBtn.addEventListener('click', closeReportModal);
+
+  if (reportModal) {
     reportModal.addEventListener('click', (e) => {
-      if (e.target === reportModal) {
-        reportModal.classList.add('hidden');
-        document.body.style.overflow = '';
-      }
+      if (e.target === reportModal) closeReportModal();
     });
   }
 
   // -------------------------------------------------------------
-  // 6. Lead Inquiry Form & Consultation Request Handler
+  // 8. Dynamic Copyright Year
   // -------------------------------------------------------------
-  const leadForm = document.getElementById('consultation-lead-form');
-  const formSuccessToast = document.getElementById('form-success-toast');
-  const uploadInput = document.getElementById('drawing-upload');
-  const uploadLabel = document.getElementById('upload-status-text');
-
-  // File upload change feedback
-  if (uploadInput && uploadLabel) {
-    uploadInput.addEventListener('change', () => {
-      if (uploadInput.files.length > 0) {
-        const fileNames = Array.from(uploadInput.files).map(f => f.name).join(', ');
-        uploadLabel.textContent = `Attached: ${fileNames}`;
-        uploadLabel.classList.add('text-amber-400');
-      } else {
-        uploadLabel.textContent = 'Upload Architectural Drawings / Project Documents (PDF, DWG, ZIP up to 50MB)';
-        uploadLabel.classList.remove('text-amber-400');
-      }
-    });
+  const yearDisplay = document.getElementById('year-display');
+  if (yearDisplay) {
+    yearDisplay.textContent = new Date().getFullYear();
   }
-
-  if (leadForm) {
-    leadForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      // Retrieve form values
-      const name = document.getElementById('lead-name')?.value || '';
-      const phone = document.getElementById('lead-phone')?.value || '';
-      const email = document.getElementById('lead-email')?.value || '';
-      const pLocation = document.getElementById('lead-location')?.value || 'Mumbai';
-      const pType = document.getElementById('lead-type')?.value || 'General';
-      const pStage = document.getElementById('lead-stage')?.value || 'Planning';
-      const pDesc = document.getElementById('lead-desc')?.value || '';
-
-      const submitBtn = leadForm.querySelector('button[type="submit"]');
-      const originalBtnText = submitBtn.innerHTML;
-
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = `
-        <span class="inline-flex items-center gap-2 text-slate-950 font-bold">
-          <svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-slate-950" fill="none" viewBox="0 0 24 24">
-            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-          </svg>
-          Structuring Mumbai Project Brief...
-        </span>
-      `;
-
-      // Simulate instantaneous processing & confirmation
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalBtnText;
-
-        // Show Toast Notification
-        if (formSuccessToast) {
-          formSuccessToast.classList.remove('hidden');
-          formSuccessToast.classList.add('animate-fadeIn');
-
-          setTimeout(() => {
-            formSuccessToast.classList.add('hidden');
-          }, 8000);
-        }
-
-        // Reset Form
-        leadForm.reset();
-        if (uploadLabel) {
-          uploadLabel.textContent = 'Upload Architectural Drawings / Project Documents (PDF, DWG, ZIP up to 50MB)';
-          uploadLabel.classList.remove('text-amber-400');
-        }
-
-        // Scroll smoothly to toast
-        formSuccessToast.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }, 900);
-    });
-  }
-
-  // -------------------------------------------------------------
-  // 7. WhatsApp Quick Connect Link Generator
-  // -------------------------------------------------------------
-  const whatsappBtns = document.querySelectorAll('.whatsapp-trigger-btn');
-  whatsappBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const defaultText = encodeURIComponent(
-        "Hello BuildIQ Projects Team, I am planning an upcoming construction / interior / renovation project in Mumbai (MMR) and would like to discuss PMC coordination and site oversight."
-      );
-      // Opens WhatsApp Web or App
-      window.open(`https://wa.me/?text=${defaultText}`, '_blank');
-    });
-  });
-
-  // Re-generate Lucide icons on any dynamic markup changes
-  setTimeout(() => {
-    if (window.lucide) window.lucide.createIcons();
-  }, 100);
 });

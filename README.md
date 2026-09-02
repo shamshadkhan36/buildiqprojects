@@ -1,79 +1,84 @@
-# BuildIQ Projects — Project Management Consultancy (PMC)
+# BuildIQ Projects — Project Management Consultancy | Architecture | Turnkey Construction
 
-> **Intelligent Project Management. Seamless Execution. Your Project, Under Control.**
+> **Engineering-Led Project Management, Architecture & Turnkey Construction Across India.**
 
-A modern, responsive, conversion-focused website for **BuildIQ Projects**, a professional **Project Management Consultancy (PMC)** serving construction, interior, and renovation projects in Mumbai, India.
-
----
-
-## 🏛️ Brand Positioning
-
-BuildIQ Projects provides professional project management, coordination, and execution oversight on behalf of clients. 
-We act as the client-side management layer between project goals and the contractors, designers, vendors, and consultants executing the work on site.
-
-**Core Value Drivers:**
-- **Control**: Real-time milestone governance, schedule tracking, and critical path monitoring.
-- **Coordination**: Single point of accountability connecting all project stakeholders.
-- **Transparency**: Weekly executive reporting, snag resolution tracking, and objective quality audits.
-- **Execution**: Practical field understanding to prevent site excuses and delays.
+A modern, high-converting, responsive platform for **BuildIQ Projects**, delivering independent client-side PMC, in-house architectural design, and complete turnkey civil execution backed by 20+ years of ground-level engineering experience.
 
 ---
 
-## 🚀 Key Website Features
+## 🏛️ Brand Overview
 
-1. **Strategic Conversion Architecture**:
-   - **Hero Section**: Eyebrow badge, value proposition, and visual workflow (`Planning → Coordination → Site → Completion`).
-   - **Trust & Value Strip**: Core pillars (Planning, Site Coordination, Quality Monitoring, Progress Control).
-   - **The Problem Statement**: Contrast between chaotic client coordination vs. structured PMC layer.
-   - **What PMC Means**: Interactive visual diagram showing `Client → BuildIQ PMC → Stakeholders → Delivered Project`.
-   - **Core Services (8 Services)**: Planning, Contractor & Vendor Coordination, Site Management, Quality Monitoring, Cost & Change Management, Schedule Management, Design & Execution Coordination, Handover & Closeout.
-   - **The BuildIQ Method**: 6-step timeline (`Understand → Plan → Coordinate → Monitor → Control → Deliver`).
-   - **Four Pillars of Control**: Time, Cost, Quality, Coordination.
-   - **Conceptual Project Control Dashboard**: Interactive tabs demonstrating Milestone Tracking, Daily Site Logs, Snag Resolution, and Quality Checklist.
-   - **Site Visibility & Reporting Matrix**: Authentic inspection checks and structured weekly reporting categories.
-   - **Relevant Experience Portfolio**: High-end residential duplexes, BKC corporate fit-outs, and heritage renovations.
-   - **Experience Behind the Management**: Practical construction heritage (1970 roots, 2012 ArcTech, 2019 LLP).
-   - **Comprehensive Lead Capture**: Validated inquiry form with Mumbai micro-market picker, scope checkboxes, and file upload zone.
-   - **Mobile Sticky Action Bar & Floating WhatsApp**: Instant access to WhatsApp, direct call, and consultation modal.
+BuildIQ Projects provides independent client-side Project Management Consultancy (PMC), in-house architectural working drawings (GFC), and complete turnkey Lock & Key civil execution.
+
+- **Head Office**: B-504, Minar Tower, S. V. Road, Near JVLR Flyover, Jogeshwari West, Mumbai, Maharashtra - 400102
+- **Email**: contact@buildiqprojects.com
+- **Phone / WhatsApp**: +91 98200 12345
+- **Execution Footprint**: Mumbai MMR, Rajasthan (Sikar), and Pan-India
+
+---
+
+## 🚀 Website Architecture & Core Sections
+
+1. **Header & Navigation**:
+   - Brand Logo: **BuildIQ Projects**
+   - Tagline: `Project Management Consultancy | Architecture | Turnkey Construction`
+   - Menu: Home, Services, Featured Project (Sikar), Portfolio, About Founder, Contact Us
+   - Action: `Book Consultation`
+
+2. **Hero Section (Main Banner)**:
+   - Main Heading: *Engineering-Led Project Management, Architecture & Turnkey Construction Across India.*
+   - Sub-Heading & Key Highlights (Independent PMC, In-House Turnkey, Arbitration Claims Advisory).
+   - CTAs: `[ View Projects ]` & `[ Connect on WhatsApp ]`.
+
+3. **Featured Project Spotlight (Sikar, Rajasthan)**:
+   - Project: *G+4 Multi-Story Development — Sikar, Rajasthan* (95% Completed).
+   - Scope: Architectural Planning, GFC Drawings, and End-to-End On-Site PMC.
+
+4. **Why BuildIQ Projects? (The SingleWindow Advantage)**:
+   - *How We Deliver Value Without Multi-Agency Chaos*
+   - 1. Independent PMC as Primary Focus
+   - 2. Full Turnkey Construction (Lock & Key)
+   - 3. Proven Pan-India Capability
+
+5. **Our Core Services**:
+   - **Service 1**: Project Management Consultancy (PMC) — [Primary Core]
+   - **Service 2**: Architecture & Full Turnkey Construction (Lock & Key)
+   - **Service 3**: Construction Arbitration & Contract Claims (Western Railway track record)
+   - **Service 4**: Public Sector & Institutional Infrastructure
+
+6. **Interactive Engineering Control & Quality Audit Center**:
+   - RA Bill Auditing & Physical Measurement Sheet Verification
+   - Bar Bending Schedule (BBS) & Structural Integrity Checklists
+   - Concrete Cube Crushing Matrix (7-Day & 28-Day NABL Logs)
+   - Techno-Legal Delay Claims & Dispute Management
+
+7. **Portfolio & Project Experience (Filterable Tabs)**:
+   - Outstation & Regional Projects (G+4 Sikar, Rajasthan)
+   - Railways & Defense Infrastructure (Western Railway Staff Quarters, MES Defense Quarters)
+   - Urban Housing & Redevelopment (MHADA Projects)
+   - Private & Commercial Developments (Corporate Offices & Luxury Residences)
+
+8. **About the Founder**:
+   - Built on 20+ Years of Ground-Level Civil Engineering.
+   - B.Tech Civil Engineering pedigree with Western Railway, MES, and MHADA on-site mastery.
+
+9. **Contact & Head Office Location**:
+   - Jogeshwari West Head Office details, validated lead capture form, file/drawing upload, and WhatsApp direct integration.
+
+10. **Mobile Sticky Quick Buttons**:
+    - `[ WhatsApp ]` | `[ Call Now ]` | `[ Enquire Now ]`
 
 ---
 
 ## 💻 Tech Stack
 
-- **HTML5**: Semantic markup, Open Graph metadata, and Schema.org JSON-LD structured data.
-- **CSS3 / Tailwind CSS**: Custom design system, technical grid textures, and responsive layout.
-- **Vanilla JavaScript**: Lightweight interactive dashboard tabs, modal manager, and mobile drawer.
-- **Lucide Icons**: Crisp, modern icon set.
-- **Google Fonts**: Plus Jakarta Sans & Inter typography.
-
----
-
-## 📂 Project Structure
-
-```
-buildiqprojects/
-├── index.html       # Main website markup with all 18+ sections & SEO
-├── styles.css       # Custom stylesheets, animations, and glassmorphism UI
-├── app.js           # Interactive components, dashboard logic & form handling
-└── README.md        # Project documentation
-```
-
----
-
-## 🌐 Local Development
-
-To view the website locally, open `index.html` in any modern web browser or serve it via a local web server:
-
-```bash
-# Using Python
-python -m http.server 3000
-
-# Using Node / npx
-npx serve .
-```
+- **HTML5**: Semantic structure, OpenGraph meta tags, JSON-LD Schema markup.
+- **Tailwind CSS & Custom CSS**: Glassmorphism, engineering grid themes, and responsive layout.
+- **Vanilla JavaScript**: Filterable portfolio tabs, dashboard panels, lead capture handlers, and Lucide icons.
+- **Lucide Icons**: Crisp modern UI icons.
 
 ---
 
 ## 📄 License & Attribution
 
-© 2026 BuildIQ Projects. All Rights Reserved. Project Management Consultancy (PMC).
+© 2026 BuildIQ Projects. All Rights Reserved. Project Management Consultancy | Architecture | Turnkey Construction.
